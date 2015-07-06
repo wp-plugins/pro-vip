@@ -1,0 +1,1443 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pro-VIP v0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-07-06 11:22:39+0000\n"
+"Last-Translator: vahid <vahidd.com@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Farsi\n"
+"X-Poedit-Country: IRAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: inc/actions/class-pro-vip-actions.php:66
+#: inc/actions/class-pro-vip-actions.php:77
+#@ provip
+msgid "Login Failed."
+msgstr "خطا در ورود."
+
+#: inc/actions/class-pro-vip-actions.php:85
+#, php-format
+#@ provip
+msgid "Oops. You cannot download this file. <a href=\"%s\">Return to site</a>"
+msgstr "شما قادر به دانلود این فایل نیستید. <a href=\"%s\">بازگشت به سایت</a>"
+
+#: inc/actions/class-pro-vip-actions.php:116
+#@ provip
+msgid "Invalid Plan or plan level."
+msgstr "خطا در پلن یا نوع پلن."
+
+#: inc/actions/class-pro-vip-actions.php:120
+#: inc/classes/class-pro-vip-notices.php:94
+#@ provip
+msgid "Invalid email address."
+msgstr "خطا در آدرس ایمیل."
+
+#: inc/actions/class-pro-vip-actions.php:124
+#@ provip
+msgid "Empty first name."
+msgstr "فیلد نام خالی است."
+
+#: inc/actions/class-pro-vip-actions.php:227
+#@ provip
+msgid "Single sale not enabled."
+msgstr "فروش تکی فعال نیست."
+
+#: inc/admin/class-pro-vip-admin.php:105
+#: inc/admin/class-pro-vip-admin.php:107
+#@ provip
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#: inc/admin/class-pro-vip-admin.php:120
+#@ provip
+msgid "VIP Members"
+msgstr "کاربران وی‌آی‌پی"
+
+#: inc/admin/class-pro-vip-admin.php:222
+#@ provip
+msgid "Are you sure?"
+msgstr "مطمئن هستید؟"
+
+#: inc/admin/class-pro-vip-admin.php:223
+#: inc/admin/payments/class-pro-vip-admin-payments.php:367
+#@ provip
+msgid "An error happened. Please try again."
+msgstr "خطایی رخ داد. لطفا دوباره امتحان کنید."
+
+#: inc/admin/class-pro-vip-admin.php:262
+#@ provip
+msgid "Pro VIP Overview"
+msgstr "پرو‌ وی‌آی‌پی در یک نگاه"
+
+#: inc/admin/files/class-pro-vip-admin-files-ajax-actions.php:98
+#@ provip
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr "آپلود این نوع فایل به دلیل مسائل امنیتی مجاز نمی‌باشد."
+
+#: inc/admin/files/class-pro-vip-admin-files-ajax-actions.php:105
+#@ provip
+msgid "Error in creating upload folders."
+msgstr "خطایی در حین ساخت پوشه فایل رخ داد."
+
+#: inc/admin/files/class-pro-vip-admin-files-metabox.php:35
+#@ provip
+msgid "File Settings"
+msgstr "تنظیمات فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files-metabox.php:63
+#: inc/classes/class-pro-vip-filter-content.php:91
+#@ provip
+msgid "Levels"
+msgstr "سطح‌ها"
+
+#: inc/admin/files/class-pro-vip-admin-files-metabox.php:67
+#: inc/admin/payments/class-pro-vip-admin-payments.php:104
+#: templates/content-single-download.php:54
+#@ provip
+msgid "Price"
+msgstr "قیمت"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:30
+#@ provip
+msgctxt "Post Type General Name"
+msgid "Files"
+msgstr "فایل‌ها"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:31
+#@ provip
+msgctxt "Post Type Singular Name"
+msgid "File"
+msgstr "فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:32
+#: inc/admin/files/class-pro-vip-admin-files.php:33
+#: inc/admin/files/class-pro-vip-admin-files.php:35
+#@ provip
+msgid "Files"
+msgstr "فایل‌ها"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:34
+#: inc/admin/payments/class-pro-vip-admin-payments.php:66
+#@ provip
+msgid "Parent Item:"
+msgstr "آیتم والد:"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:36
+#@ provip
+msgid "Add New File"
+msgstr "اضافه کردن فایل جدید"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:37
+#@ provip
+msgid "Add File"
+msgstr "اضافه کردن فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:38
+#@ provip
+msgid "New File"
+msgstr "فایل جدید"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:39
+#@ provip
+msgid "Edit File"
+msgstr "ویرایش فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:40
+#@ provip
+msgid "Update File"
+msgstr "به‌روز‌رسانی فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:41
+#@ provip
+msgid "View File"
+msgstr "مشاهده فایل"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:42
+#@ provip
+msgid "Search Files"
+msgstr "جست‌جوی فایل‌ها"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:43
+#: inc/admin/payments/class-pro-vip-admin-payments.php:75
+#@ provip
+msgid "Not found"
+msgstr "یافت نشد"
+
+#: inc/admin/files/class-pro-vip-admin-files.php:44
+#: inc/admin/payments/class-pro-vip-admin-payments.php:76
+#@ provip
+msgid "Not found in Trash"
+msgstr "چیزی در سطل زباله یافت نشد"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:53
+#: inc/admin/payments/class-pro-vip-admin-payments.php:64
+#: inc/admin/payments/class-pro-vip-admin-payments.php:65
+#: inc/admin/payments/class-pro-vip-admin-payments.php:67
+#@ provip
+msgid "Payments"
+msgstr "پرداخت‌ها"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:62
+#@ provip
+msgctxt "Post Type General Name"
+msgid "Payments"
+msgstr "پرداخت‌ها"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:63
+#@ provip
+msgctxt "Post Type Singular Name"
+msgid "Payment"
+msgstr "پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:68
+#@ provip
+msgid "Add New Payment"
+msgstr "اضافه کردن پرداخت جدید"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:69
+#@ provip
+msgid "Add Payment"
+msgstr "اضافه کردن پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:70
+#@ provip
+msgid "New Payment"
+msgstr "پرداخت جدید"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:71
+#@ provip
+msgid "Edit Payment"
+msgstr "ویرایش پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:72
+#@ provip
+msgid "Update Payment"
+msgstr "به‌روز‌رسانی پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:73
+#@ provip
+msgid "View Payment"
+msgstr "مشاهده پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:74
+#@ provip
+msgid "Search Payments"
+msgstr "جست‌جوی پرداخت‌ها"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:105
+#@ provip
+msgid "Author"
+msgstr "کاربر"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:106
+#@ provip
+msgid "IP"
+msgstr "آی‌پی"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:107
+#@ provip
+msgid "Status"
+msgstr "وضعیت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:108
+#: inc/views/admin/payments/view-payment.php:53
+#: inc/views/admin/settings/gateways.php:17
+#: templates/content-single-download.php:64
+#: templates/plans.php:46
+#: templates/shortcodes/receipt.php:57
+#: templates/shortcodes/user-payments.php:22
+#: templates/shortcodes/user-payments.php:50
+#@ provip
+msgid "Gateway"
+msgstr "درگاه پرداخت"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:299
+#@ provip
+msgid "You don't have access to this page."
+msgstr "شما به این صفحه اجازه دسترسی ندارید."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:28
+#: inc/admin/settings/class-pro-vip-admin-settings.php:29
+#: inc/views/admin/settings/gateways.php:65
+#@ provip
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:60
+#@ provip
+msgid "General"
+msgstr "عمومی"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:67
+#@ provip
+msgid "Default VIP Roles"
+msgstr "نقش‌های پیشفرض وی‌آی‌پی"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:69
+#: inc/admin/settings/class-pro-vip-admin-settings.php:235
+#: inc/classes/class-pro-vip-filter-content.php:88
+#: inc/views/admin/settings/vip-levels-field.php:32
+#: inc/views/admin/settings/vip-levels-field.php:65
+#@ provip
+msgid "Yes"
+msgstr "بله"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:70
+#: inc/admin/settings/class-pro-vip-admin-settings.php:234
+#: inc/classes/class-pro-vip-filter-content.php:88
+#: inc/views/admin/settings/vip-levels-field.php:31
+#: inc/views/admin/settings/vip-levels-field.php:64
+#@ provip
+msgid "No"
+msgstr "خیر"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:73
+#@ provip
+msgid "Currency Settings"
+msgstr "تنظیمات ارز"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:81
+#@ provip
+msgid "Default Currency"
+msgstr "ارز پیشفرض"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:84
+#@ provip
+msgid "Left (£99.99)"
+msgstr "جپ (£99.99)"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:85
+#@ provip
+msgid "Right (99.99£)"
+msgstr "راست (99.99£)"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:86
+#@ provip
+msgid "Left with space (£ 99.99)"
+msgstr "چپ با فاصله (£ 99.99)"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:87
+#@ provip
+msgid "Right with space (99.99 £)"
+msgstr "راست با فاصله (99.99 £)"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:88
+#@ provip
+msgid "Currency Position"
+msgstr "موقعیت ارز"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:90
+#@ provip
+msgid "Thousand Separator"
+msgstr "جداکننده هزارگان"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:91
+#@ provip
+msgid "Decimal Separator"
+msgstr "جداکننده اعشار"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:92
+#@ provip
+msgid "Number of Decimals"
+msgstr "تعداد اعشار"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:98
+#@ provip
+msgid "VIP Settings"
+msgstr "تنظیمات وی‌آی‌پی"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:105
+#@ provip
+msgid "If you don't want to use vip levels just create one and select it as default vip level."
+msgstr "اگر نمی‌خواهید از سطح‌های افزونه استفاده کنید٬ فقط یک سطح ایجاد کنید و آن را به عنوان سطح پیشفرض انتخاب کنید."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:106
+#@ provip
+msgid "Default VIP Level"
+msgstr "سطح پیشفرض وی‌آی‌پی"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:113
+#@ provip
+msgid "Pages"
+msgstr "صفحات"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:117
+#@ provip
+msgid "Put this shortcode in the page content. [pv-plans-form]"
+msgstr "کد میانبر [pv-plans-form] را به عنوان متن صفحه وارد کنید."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:118
+#@ provip
+msgid "Purchase Plan"
+msgstr "خرید پلن"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:122
+#@ provip
+msgid "This is the page buyers are sent to after completing their purchases. The [pv-receipt] short code should be on this page."
+msgstr "این صفحه‌ای است که کاربران بعد از پرداخت به آن هدایت می‌شوند. کد میانبر [pv-receipt] را به عنوان متن صفحه وارد کنید."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:123
+#@ provip
+msgid "Success Page"
+msgstr "صفحه پرداخت موفقیت‌آمیز"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:141
+#@ provip
+msgid "Emails"
+msgstr "ایمیل‌ها"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:146
+#@ provip
+msgid "Email Logo"
+msgstr "لوگو ایمیل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:148
+#@ provip
+msgid "Email Footer"
+msgstr "فوتر ایمیل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:150
+#@ provip
+msgid "From Name"
+msgstr "ایمل از نام"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:151
+#@ provip
+msgid "From Email"
+msgstr "از ایمیل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:153
+#@ provip
+msgid "<h3>Account Purchase</h3>"
+msgstr "<h3>خرید اکانت</h3>"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:158
+#@ provip
+msgid "Purchase Account Subject"
+msgstr "موضوع ایمیل خرید اکانت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:159
+#: inc/payment/class-pro-vip-payment-actions.php:72
+#@ provip
+msgid "Account Purchase"
+msgstr "خرید اکانت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:163
+#@ provip
+msgid "Account Purchase Receipt"
+msgstr "رسید خرید اکانت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:184
+#@ provip
+msgid "<h3>File Purchase</h3>"
+msgstr "<h3>خرید فایل</h3>"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:189
+#@ provip
+msgid "Purchase File Subject"
+msgstr "موضوع ایمیل خرید فایل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:190
+#: inc/payment/class-pro-vip-payment-actions.php:123
+#@ provip
+msgid "File Purchase"
+msgstr "خرید فایل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:194
+#@ provip
+msgid "File Purchase Receipt"
+msgstr "رسید خرید فایل"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:217
+#@ provip
+msgid "Payment Gateway"
+msgstr "درگاه پرداخت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:229
+#@ provip
+msgid "Other"
+msgstr "دیگر"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:237
+#@ provip
+msgid "Delete Expired Users from Database"
+msgstr "حذف کاربران منقضی شده از دیتابیس"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:243
+#@ provip
+msgid "Encryption Key"
+msgstr "کلید کدگذاری"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:328
+#, php-format
+#@ provip
+msgctxt "Gateway Settings"
+msgid "%s Settings"
+msgstr "تنظیمات %s"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:37
+#: inc/views/admin/tools/edit-user/index.php:18
+#@ provip
+msgid "Edit User"
+msgstr "ویرایش کاربر"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:80
+#@ provip
+msgid "Enter a valid vip time."
+msgstr "یک مقدار صحیح برای زمان وارد کنید."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:83
+#@ provip
+msgid "Selected level does not exists."
+msgstr "سطح انتخاب شده یافت نشد."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:86
+#@ provip
+msgid "User not found."
+msgstr "کاربر یافت نشد."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:127
+#@ provip
+msgid "User updated."
+msgstr "کاربر ویرایش شد."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:127
+#@ provip
+msgid "An error happened. Please try again"
+msgstr "خطایی رخ داد. لطفا دوباره امتحان کنید."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:27
+#@ provip
+msgid "System Info"
+msgstr "اطلاعات سیستم"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:45
+#@ provip
+msgid "Wordpress"
+msgstr "وردپرس"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:47
+#@ provip
+msgid "Site URL"
+msgstr "آدرس سایت"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:48
+#@ provip
+msgid "Home URL"
+msgstr "آدرس خانه"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:49
+#@ provip
+msgid "Admin Email"
+msgstr "ایمیل مدیر"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:50
+#@ provip
+msgid "Wordpress Version"
+msgstr "نسخه وردپرس"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:51
+#@ provip
+msgid "Debug Mode"
+msgstr "حالت خطایابی"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:52
+#@ provip
+msgid "Language"
+msgstr "زبان"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:57
+#@ provip
+msgid "User Browser"
+msgstr "مرورگر کاربر"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-system-info.php:58
+#@ provip
+msgid "User Agent String"
+msgstr "رشته مرورگر کاربر"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-vip-bulk-edit.php:28
+#@ provip
+msgid "VIP Bulk Edit"
+msgstr "ویرایش گروهی وی‌آی‌پی"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-vip-bulk-edit.php:56
+#@ provip
+msgid "\"Time\" field must be a valid integer."
+msgstr "در فیلد \"زمان\" باید یک عدد صحیح وارد کنید."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-vip-bulk-edit.php:61
+#@ provip
+msgid "You must select at least one level to update."
+msgstr "برای بروزرسانی حداقل باید یک سطح را انتخاب کنید."
+
+#: inc/admin/tools/class-pro-vip-admin-tools-vip-bulk-edit.php:170
+#, php-format
+#@ provip
+msgid "%d user updated."
+msgid_plural "%d users updated."
+msgstr[0] "%d کاربر ویرایش شد."
+msgstr[1] "%d کاربر ویرایش شدند."
+
+#: inc/admin/tools/class-pro-vip-admin-tools.php:43
+#: inc/admin/tools/class-pro-vip-admin-tools.php:46
+#: inc/views/admin/tools/index.php:8
+#@ provip
+msgid "Tools"
+msgstr "ابزار"
+
+#: inc/admin/tools/class-pro-vip-admin-tools.php:68
+#: inc/views/admin/payments/view-payment.php:11
+#@ provip
+msgid "Back"
+msgstr "بازگشت"
+
+#: inc/admin/users/class-pro-vip-admin-users-column.php:33
+#@ provip
+msgid "VIP Data"
+msgstr "اطلاعات وی‌آی‌پی"
+
+#: inc/classes/class-pro-vip-currency.php:51
+#@ provip
+msgid "United States dollar"
+msgstr "دلار آمریکا"
+
+#: inc/classes/class-pro-vip-currency.php:55
+#@ provip
+msgid "Euro"
+msgstr "یورو"
+
+#: inc/classes/class-pro-vip-currency.php:59
+#@ provip
+msgid "Japanese yen"
+msgstr "ین ژاپن"
+
+#: inc/classes/class-pro-vip-currency.php:63
+#@ provip
+msgid "Pound sterling"
+msgstr "پوند"
+
+#: inc/classes/class-pro-vip-currency.php:67
+#@ provip
+msgid "Australian dollar"
+msgstr "دلار استرالیا"
+
+#: inc/classes/class-pro-vip-currency.php:71
+#@ provip
+msgid "Swiss franc"
+msgstr "فرانک سوییس"
+
+#: inc/classes/class-pro-vip-currency.php:75
+#@ provip
+msgid "Canadian dollar"
+msgstr "دلار کانادا"
+
+#: inc/classes/class-pro-vip-currency.php:79
+#@ provip
+msgid "Mexican peso"
+msgstr "پزو مکزیک"
+
+#: inc/classes/class-pro-vip-currency.php:83
+#@ provip
+msgid "Chinese yuan"
+msgstr "یوآن چین"
+
+#: inc/classes/class-pro-vip-currency.php:87
+#@ provip
+msgid "New Zealand dollar"
+msgstr "دلار نیوزلند"
+
+#: inc/classes/class-pro-vip-notices.php:91
+#@ provip
+msgid "An error happened. Please tray again."
+msgstr "خطایی رخ داد. لطفا دوباره امتحان کنید."
+
+#: inc/classes/class-pro-vip-notices.php:92
+#@ provip
+msgid "An error happened."
+msgstr "خطایی رخ داد."
+
+#: inc/classes/class-pro-vip-notices.php:93
+#@ provip
+msgid "Empty email address."
+msgstr "فیلد آدرس ایمیل خالی است."
+
+#: inc/classes/class-pro-vip-notices.php:95
+#@ provip
+msgid "Empty name."
+msgstr "فیلد نام خالی است."
+
+#: inc/classes/class-pro-vip-notices.php:96
+#@ provip
+msgid "Invalid name."
+msgstr "خطا در نام."
+
+#: inc/email/strings.php:6
+#@ provip
+msgid ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>Dear {{name}},</h2>\n"
+"\n"
+"Thank you for your purchase. Please click on the link below to download the file.\n"
+"<a href='{{download-link}}'>{{file-name}}</a>"
+msgstr ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>{{name}} عزیز٬</h2>\n"
+"\n"
+"سپاس از خرید شما. برای دانلود فایل خریداری شده روی لینک زیر کلیک کنید..\n"
+"<a href='{{download-link}}'>{{file-name}}</a>"
+
+#: inc/payment/class-pro-vip-payment-actions.php:103
+#@ provip
+msgid "There was a problem while registering user purchase. Please contact to site administrator."
+msgstr "خطایی هنگام ثبت خرید شما رخ داد. لطفا با مدیر سایت تماس بگیرید."
+
+#: inc/payment/class-pro-vip-payment-gateway.php:75
+#@ provip
+msgid "No Payment Gateway."
+msgstr "درگاه پرداختی وجود ندارد."
+
+#: inc/payment/class-pro-vip-payment-gateway.php:97
+#: inc/payment/class-pro-vip-payment-gateway.php:136
+#: inc/views/admin/payments/view-payment.php:8
+#@ provip
+msgid "Payment"
+msgstr "پرداخت"
+
+#: inc/payment/class-pro-vip-payment-gateway.php:135
+#@ provip
+msgid "Your transaction failed, please try again or contact site support."
+msgstr "پرداخت شما موفقیت آمیز نبود. لطفا با مدیریت سایت تماس بگیرید."
+
+#: inc/payment/class-pro-vip-payment.php:69
+#@ provip
+msgid "WP VIP Payment"
+msgstr "پرداخت وی‌آی‌پی"
+
+#: inc/payment/class-pro-vip-payment.php:50
+#: inc/payment/class-pro-vip-payment.php:116
+#: templates/shortcodes/receipt.php:9
+#@ provip
+msgid "Payment not found."
+msgstr "پرداخت یافت نشد."
+
+#: inc/payment/class-pro-vip-payment.php:125
+#@ provip
+msgid "Pending"
+msgstr "معلق"
+
+#: inc/payment/class-pro-vip-payment.php:129
+#@ provip
+msgid "Complete"
+msgstr "تکمیل"
+
+#: inc/payment/class-pro-vip-payment.php:133
+#@ provip
+msgid "Refunded"
+msgstr "پس‌داده شده"
+
+#: inc/payment/class-pro-vip-payment.php:137
+#@ provip
+msgid "Failed"
+msgstr "ناموفق"
+
+#: inc/payment/class-pro-vip-payment.php:141
+#@ provip
+msgid "Abandoned"
+msgstr "رهاشده"
+
+#: inc/payment/class-pro-vip-payment.php:149
+#@ provip
+msgid "Revoked"
+msgstr "لغو شده"
+
+#: inc/classes/class-pro-vip-filter-content.php:83
+#: inc/views/admin/dashboard/index.php:10
+#@ provip
+msgid "Pro VIP"
+msgstr "پرو وی‌آی‌پی"
+
+#: inc/views/admin/dashboard/index.php:14
+#@ provip
+msgid "About"
+msgstr "درباره"
+
+#: inc/views/admin/dashboard/index.php:36
+#@ provip
+msgid "Nothing found."
+msgstr "چیزی یافت نشد."
+
+#: inc/views/admin/dashboard/index.php:52
+#@ provip
+msgid "Overview"
+msgstr "در یک نگاه"
+
+#: inc/views/admin/dashboard/statistic-table.php:4
+#@ provip
+msgid "Total Sells"
+msgstr "مجموع فروش‌ها"
+
+#: inc/views/admin/dashboard/statistic-table.php:8
+#: inc/views/admin/dashboard/statistic-table.php:12
+#@ provip
+msgid "Total VIP Accounts"
+msgstr "مجموع حساب‌های وی‌آی‌پی"
+
+#: inc/views/admin/dashboard/statistic-table.php:18
+#@ provip
+msgid "VIP Levels Users"
+msgstr "کاربران سطح‌های وی‌آی‌پی"
+
+#: inc/views/admin/dashboard/statistic-table.php:30
+#@ provip
+msgid "Total Purchases"
+msgstr "مجموع خریدها"
+
+#: inc/views/admin/dashboard/statistic-table.php:38
+#@ provip
+msgid "Last 24 hours purchases"
+msgstr "خریدهای ۲۴ ساعت گذشته"
+
+#: inc/views/admin/dashboard/statistic-table.php:46
+#@ provip
+msgid "Last week purchases"
+msgstr "خریدهای هفته گذشته"
+
+#: inc/views/admin/dashboard/statistic-table.php:56
+#@ provip
+msgid "Most Purchased File"
+msgstr "پرفروشترین فایل"
+
+#: inc/views/admin/dashboard/statistic-table.php:61
+#: inc/views/admin/dashboard/statistic-table.php:74
+#@ provip
+msgid "No purchase yet."
+msgstr "خریدی انجام نشده‌است."
+
+#: inc/views/admin/dashboard/statistic-table.php:69
+#@ provip
+msgid "Most Recent Purchase"
+msgstr "آخرین فایل خریداری شده"
+
+#: inc/views/admin/files/file-item.php:8
+#@ provip
+msgid "File download name:"
+msgstr "نام دانلودی فایل:"
+
+#: inc/views/admin/files/file-item.php:12
+#@ provip
+msgid "File price:"
+msgstr "قیمت فایل:"
+
+#: inc/views/admin/files/file-item.php:17
+#, php-format
+#@ provip
+msgid "Downloaded %s time"
+msgid_plural "Downloaded %s times"
+msgstr[0] "%s دفعه دانلود شده"
+msgstr[1] "%s دفعه دانلود شده"
+
+#: inc/views/admin/files/file-item.php:18
+#@ provip
+msgid "Download File"
+msgstr "دانلود فایل"
+
+#: inc/views/admin/files/file-item.php:19
+#@ provip
+msgid "Delete File"
+msgstr "حذف فایل"
+
+#: inc/views/admin/files/file-settings.php:13
+#@ provip
+msgid "General Settings"
+msgstr "تنظیمات عمومی"
+
+#: inc/views/admin/files/file-settings.php:18
+#@ provip
+msgid "Enable Single Sale"
+msgstr "فعال کردن فروش تکی فایل"
+
+#: inc/views/admin/files/file-settings.php:31
+#@ provip
+msgid "Single Sale Settings"
+msgstr "تنظیمات فروش تکی فایل"
+
+#: inc/libs/framework/form/field-types/class-pv-framework-media-field-type.php:22
+#: inc/libs/framework/form/field-types/class-pv-framework-media-field-type.php:23
+#: inc/views/admin/files/files-container.php:26
+#: inc/views/admin/files/metabox-wrapper.php:21
+#@ provip
+msgid "Choose File"
+msgstr "انتخاب فایل"
+
+#: inc/views/admin/settings/gateways.php:16
+#@ provip
+msgid "Default"
+msgstr "پیشفرض"
+
+#: inc/views/admin/settings/gateways.php:18
+#@ provip
+msgid "Gateway ID"
+msgstr "شناسه درگاه"
+
+#: inc/views/admin/settings/gateways.php:19
+#@ provip
+msgid "Enabled"
+msgstr "فعال"
+
+#: inc/views/admin/settings/plans-field.php:10
+#@ provip
+msgid "Plans"
+msgstr "پلن‌ها"
+
+#: inc/payment/class-pro-vip-payment.php:201
+#: inc/views/admin/settings/plans-field.php:29
+#: inc/views/admin/settings/plans-field.php:79
+#: inc/views/admin/settings/vip-levels-field.php:22
+#: inc/views/admin/settings/vip-levels-field.php:55
+#@ provip
+msgid "Name"
+msgstr "نام"
+
+#: inc/views/admin/settings/plans-field.php:36
+#: inc/views/admin/settings/plans-field.php:86
+#@ provip
+msgid "Time (in days)"
+msgstr "زمان (روز)"
+
+#: inc/payment/class-pro-vip-payment.php:203
+#: inc/views/admin/settings/plans-field.php:43
+#: inc/views/admin/settings/plans-field.php:93
+#@ provip
+msgid "Cost"
+msgstr "هزینه"
+
+#: inc/views/admin/settings/plans-field.php:55
+#: inc/views/admin/settings/plans-field.php:104
+#: inc/views/admin/settings/vip-levels-field.php:37
+#: inc/views/admin/settings/vip-levels-field.php:71
+#@ provip
+msgid "Remove Plan"
+msgstr "حذف پلن"
+
+#: inc/views/admin/settings/plans-field.php:63
+#@ provip
+msgid "Add Plan"
+msgstr "اضافه کردن پلن"
+
+#: inc/views/admin/settings/vip-levels-field.php:10
+#@ provip
+msgid "VIP Level"
+msgstr "سطح وی‌آی‌پی"
+
+#: inc/views/admin/settings/vip-levels-field.php:29
+#: inc/views/admin/settings/vip-levels-field.php:62
+#@ provip
+msgid "Check by default"
+msgstr "انتخاب به صورت پیشفرض"
+
+#: inc/views/admin/settings/vip-levels-field.php:45
+#@ provip
+msgid "Add Level"
+msgstr "اضافه کردن سطح"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:17
+#@ provip
+msgid "Action"
+msgstr "نوع"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:19
+#@ provip
+msgid "Increase"
+msgstr "زیاد کردن"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:20
+#@ provip
+msgid "Decrease"
+msgstr "کم کردن"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:27
+#@ provip
+msgid "Time"
+msgstr "زمان"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:30
+#@ provip
+msgid "Seconds"
+msgstr "ثانیه"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:31
+#: inc/views/admin/tools/edit-user/edit.php:37
+#@ provip
+msgid "Minutes"
+msgstr "دقیقه"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:32
+#: inc/views/admin/tools/edit-user/edit.php:38
+#@ provip
+msgid "Hours"
+msgstr "ساعت"
+
+#: inc/payment/class-pro-vip-payment.php:202
+#: inc/views/admin/tools/bulk-vip-edit/index.php:33
+#: inc/views/admin/tools/edit-user/edit.php:39
+#@ provip
+msgid "Days"
+msgstr "روز"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:34
+#: inc/views/admin/tools/edit-user/edit.php:40
+#@ provip
+msgid "Weeks"
+msgstr "هفته"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:35
+#: inc/views/admin/tools/edit-user/edit.php:41
+#@ provip
+msgid "Years"
+msgstr "سال"
+
+#: inc/payment/class-pro-vip-payment.php:199
+#: inc/views/admin/tools/bulk-vip-edit/index.php:42
+#@ provip
+msgid "Level"
+msgstr "سطح"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:61
+#@ provip
+msgid "Users who registered"
+msgstr "کاربرانی که ثبت‌نام کرده‌اند"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:63
+#: inc/views/admin/tools/bulk-vip-edit/index.php:74
+#@ provip
+msgid "After"
+msgstr "بعد"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:64
+#: inc/views/admin/tools/bulk-vip-edit/index.php:75
+#@ provip
+msgid "Before"
+msgstr "قبل"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:66
+#: inc/views/admin/tools/bulk-vip-edit/index.php:77
+#@ provip
+msgid "Pick a date"
+msgstr "انتخاب تاریخ"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:72
+#@ provip
+msgid "Users who purchased account"
+msgstr "کاربرانی که حسابشان را خریده‌اند"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:82
+#@ provip
+msgid "More Filters"
+msgstr "بیشتر"
+
+#: inc/views/admin/tools/bulk-vip-edit/index.php:93
+#@ provip
+msgid "Edit"
+msgstr "ویرایش"
+
+#: inc/views/admin/tools/edit-user/edit.php:10
+#, php-format
+#@ provip
+msgid "Edit %s"
+msgstr "ویرایش %s"
+
+#: inc/views/admin/tools/edit-user/edit.php:73
+#: inc/views/admin/users/vip-column.php:27
+#@ provip
+msgid "Started:"
+msgstr "شروع شده:"
+
+#: inc/views/admin/tools/edit-user/edit.php:76
+#: inc/views/admin/tools/edit-user/edit.php:84
+#: inc/views/admin/users/vip-column.php:30
+#: inc/views/admin/users/vip-column.php:37
+#@ provip
+msgid "ago"
+msgstr "قبل"
+
+#: inc/views/admin/tools/edit-user/edit.php:81
+#: inc/views/admin/users/vip-column.php:34
+#@ provip
+msgid "Last Update:"
+msgstr "آخرین به‌روز‌رسانی:"
+
+#: inc/views/admin/tools/edit-user/edit.php:88
+#: inc/views/admin/users/vip-column.php:41
+#@ provip
+msgid "Expiration:"
+msgstr "اتمام:"
+
+#: inc/views/admin/tools/edit-user/edit.php:98
+#: inc/views/admin/users/vip-column.php:51
+#@ provip
+msgid "remained"
+msgstr "مانده"
+
+#: inc/views/admin/users/vip-column.php:11
+#@ provip
+msgid "No VIP Plan"
+msgstr "پلنی وجود ندارد"
+
+#: inc/views/admin/users/vip-column.php:64
+#@ provip
+msgid "Edit Accounts"
+msgstr "ویرایش حساب‌های کاربری"
+
+#: templates/content-single-download.php:46
+#, php-format
+#@ provip
+msgid "Purchase %s"
+msgstr "خرید %s"
+
+#: inc/payment/class-pro-vip-payment.php:198
+#: templates/content-single-download.php:78
+#: templates/plans.php:71
+#@ provip
+msgid "First Name"
+msgstr "نام"
+
+#: templates/content-single-download.php:90
+#: templates/plans.php:83
+#@ provip
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: inc/payment/class-pro-vip-payment.php:206
+#: templates/content-single-download.php:102
+#: templates/plans.php:58
+#@ provip
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: templates/content-single-download.php:118
+#: templates/plans.php:107
+#@ provip
+msgid "Purchase"
+msgstr "خرید"
+
+#: templates/content-single-download.php:126
+#@ provip
+msgid "You need to be logged in."
+msgstr "ابتدا باید وارد سایت شوید."
+
+#: templates/content-single-download.php:127
+#@ provip
+msgid "Login"
+msgstr "ورود"
+
+#: templates/content-single-download.php:128
+#@ provip
+msgid "Register"
+msgstr "ثبت‌نام"
+
+#: templates/payment/payment-redirect.php:10
+#: templates/payment/payment-redirect.php:33
+#@ provip
+msgid "Redirecting"
+msgstr "در حال تغییر مسیر"
+
+#: templates/payment/payment-redirect.php:14
+#@ provip
+msgid "Redirect Now"
+msgstr "ورود به درگاه"
+
+#: inc/payment/class-pro-vip-payment.php:204
+#: templates/plans.php:16
+#@ provip
+msgid "Plan"
+msgstr "پلن"
+
+#: templates/plans.php:31
+#@ provip
+msgid "Plan Type"
+msgstr "نوع پلن"
+
+#: templates/plans.php:96
+#@ provip
+msgid "Price:"
+msgstr "قیمت:"
+
+#: inc/views/admin/payments/view-payment.php:46
+#: templates/shortcodes/receipt.php:50
+#: templates/shortcodes/user-payments.php:21
+#: templates/shortcodes/user-payments.php:49
+#@ provip
+msgid "Payment Status"
+msgstr "وضعیت پرداخت"
+
+#: inc/views/admin/payments/view-payment.php:60
+#: templates/shortcodes/receipt.php:64
+#: templates/shortcodes/user-payments.php:23
+#: templates/shortcodes/user-payments.php:51
+#@ provip
+msgid "Amount"
+msgstr "مبلغ"
+
+#: inc/views/admin/payments/view-payment.php:67
+#: templates/shortcodes/receipt.php:71
+#: templates/shortcodes/user-payments.php:24
+#: templates/shortcodes/user-payments.php:52
+#@ provip
+msgid "Date"
+msgstr "تاریخ"
+
+#: inc/views/admin/payments/view-payment.php:78
+#: templates/shortcodes/receipt.php:82
+#@ provip
+msgid "Payment Key"
+msgstr "کلید پرداخت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:165
+#@ provip
+msgid ""
+"Available template tags: <br/>\n"
+"<code>{{first-name}}</code>: Paymenter's first name<br/>\n"
+"<code>{{last-name}}</code>: Paymenter's last name<br/>\n"
+"<code>{{payment-amount}}</code>: Payment Amount<br/>\n"
+"<code>{{payment-gateway}}</code>: Payment Gateway<br/>\n"
+"<code>{{payment-date}}</code>: Payment Date<br/>\n"
+"<code>{{name}}</code>: Paymenter's full name<br/>\n"
+"<code>{{plan-name}}</code>: Purchased plan name<br/>\n"
+"<code>{{plan-days}}</code>: Purchased plan days<br/>\n"
+"<code>{{plan-price}}</code>: Purchased plan price<br/>\n"
+"<code>{{expire-date}}</code>: Purchased plan expire date<br/>\n"
+"<code>{{expire-human-time}}</code>: Purchased plan expire human date<br/>\n"
+"<code>{{level-name}}</code>: Purchased level name<br/>\n"
+msgstr ""
+"تگ‌های قالب <br/>\n"
+"<code>{{first-name}}</code>: نام کوچک پرداخت کننده<br/>\n"
+"<code>{{last-name}}</code>: نام خانوادگی پرداخت کننده<br/>\n"
+"<code>{{payment-amount}}</code>: مقدار پرداخت شده<br/>\n"
+"<code>{{payment-gateway}}</code>: درگاه پرداخت<br/>\n"
+"<code>{{payment-date}}</code>: تاریخ پرداخت<br/>\n"
+"<code>{{name}}</code>: نام کامل پرداخت کننده<br/>\n"
+"<code>{{plan-name}}</code>: نام پلن خریداری شده<br/>\n"
+"<code>{{plan-days}}</code>: مقدار روزهای پلن خریداری شده<br/>\n"
+"<code>{{plan-price}}</code>: هزینه پلن خریداری شده<br/>\n"
+"<code>{{expire-date}}</code>: تاریخ پایان پلن<br/>\n"
+"<code>{{expire-human-time}}</code>: تاریخ پایان پلن خریداری شده به مقدار مانده<br/>\n"
+"<code>{{level-name}}</code>: نام سطح خریداری شده<br/>\n"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:196
+#@ provip
+msgid ""
+"Available template tags: <br/>\n"
+"<code>{{first-name}}</code>: Paymenter's first name<br/>\n"
+"<code>{{last-name}}</code>: Paymenter's last name<br/>\n"
+"<code>{{name}}</code>: Paymenter's full name<br/>\n"
+"<code>{{payment-amount}}</code>: Payment Amount<br/>\n"
+"<code>{{payment-gateway}}</code>: Payment Gateway<br/>\n"
+"<code>{{payment-date}}</code>: Payment Date<br/>\n"
+"<code>{{file-name}}</code>: Purchased file name<br/>\n"
+"<code>{{download-link}}</code>: Purchased file download link<br/>\n"
+msgstr ""
+"تگ‌های قالب: <br/>\n"
+"<code>{{first-name}}</code>: نام کوچک پرداخت کننده<br/>\n"
+"<code>{{last-name}}</code>: نام خانوادگی پرداخت کننده<br/>\n"
+"<code>{{name}}</code>: نام کامل پرداخت کننده<br/>\n"
+"<code>{{payment-amount}}</code>: مقدار پرداخت شده<br/>\n"
+"<code>{{payment-gateway}}</code>: نام درگاه پرداخت<br/>\n"
+"<code>{{payment-date}}</code>: تاریخ پرداخت<br/>\n"
+"<code>{{file-name}}</code>: نام فایل خریداری شده<br/>\n"
+"<code>{{download-link}}</code>: لینک دانلود فایل خریداری شده<br/>\n"
+
+#: inc/email/strings.php:3
+#@ provip
+msgid ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>Dear {{name}},</h2>\n"
+"\n"
+"Thank you for your purchase. Now you're a <strong>{{level-name}}</strong> member."
+msgstr ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>{{name}} عزیز٬</h2>\n"
+"\n"
+"سپاس از خرید شما. شما حالا کاربر<strong>{{level-name}}</strong> هستید."
+
+#: inc/libs/framework/form/field-types/class-pv-framework-media-field-type.php:21
+#@ provip
+msgid "Choose Files"
+msgstr "انتخاب فایل"
+
+#: inc/libs/framework/panel/class-pv-framework-panel-factory.php:68
+#@ provip
+msgid "Cheatin&#8217; uh?"
+msgstr "کلک میزنی ؟!"
+
+#: inc/views/admin/panel/panel-template.php:87
+#@ provip
+msgid "Save Changes"
+msgstr "ذخیره تنظیمات"
+
+#: inc/views/admin/panel/panel-template.php:88
+#@ provip
+msgid "Reset Settings"
+msgstr "ریست تنظیمات"
+
+#: inc/libs/framework/panel/class-pv-framework-panel-factory.php:88
+#@ provip
+msgid "Settings saved."
+msgstr "تنظیمات ذخیره شدند."
+
+#: inc/libs/framework/panel/class-pv-framework-panel-factory.php:100
+#@ provip
+msgid "Panel reset."
+msgstr "تنظیمات ریست شدند."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:248
+#: inc/admin/settings/class-pro-vip-admin-settings.php:253
+#@ provip
+msgid "Filter content metabox in post types"
+msgstr "متاباکس فیلتر نوشته در پست‌تایپ‌های"
+
+#: inc/admin/tools/class-pro-vip-admin-tools-edit-user.php:61
+#@ provip
+msgid "User not found"
+msgstr "کاربر یافت نشد"
+
+#: inc/views/admin/tools/edit-user/index.php:10
+#@ provip
+msgid "User ID:"
+msgstr "شناسه کاربر:"
+
+#: inc/classes/class-pro-vip-filter-content.php:40
+#: inc/classes/class-pro-vip-filter-content.php:95
+#@ provip
+msgid "To see the post login first."
+msgstr "برای مشاهده نوشته ابتدا باید وارد سایت شوید."
+
+#: inc/classes/class-pro-vip-filter-content.php:41
+#: inc/classes/class-pro-vip-filter-content.php:100
+#, php-format
+#@ provip
+msgid "Only %s users can see the post."
+msgstr "فقط کاربران %s قادر به مشاهده این نوشته هستند."
+
+#: inc/classes/class-pro-vip-filter-content.php:89
+#@ provip
+msgid "Filter Content"
+msgstr "فیلتر نوشته"
+
+#: inc/classes/class-pro-vip-filter-content.php:96
+#@ provip
+msgid "Login Message"
+msgstr "پیام ورود"
+
+#: inc/classes/class-pro-vip-filter-content.php:101
+#@ provip
+msgid "Restriction Message"
+msgstr "پیام عدم دسترسی"
+
+#: inc/views/admin/dashboard/index.php:31
+#@ provip
+msgid "News"
+msgstr "اخبار"
+
+#: inc/views/admin/dashboard/index.php:21
+#, php-format
+#@ provip
+msgid "Pro-VIP wordpress advanced VIP downloads plugin. Plugin created by <a href=\"%s\">WP-Pro Team</a>"
+msgstr "پرو وی آی پی افزونه حرفه‌ای مدیریت دانلود‌های وی‌آی‌پی. افزونه توسط <a href=\"%s\">تیم WP-Pro</a>"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:109
+#@ provip
+msgid "Actions"
+msgstr "ویرایش"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:367
+#@ provip
+msgid "Payment Deleted"
+msgstr "پرداخت حذف شد."
+
+#: inc/payment/class-pro-vip-payment.php:145
+#@ provip
+msgid "Trash"
+msgstr "سطل‌زباله"
+
+#: inc/views/admin/files/files-container.php:12
+#@ provip
+msgid "Items are sortable."
+msgstr "آیتم‌ها قابل Sort هستند."
+
+#: inc/admin/class-pro-vip-admin.php:224
+#: inc/views/admin/payments/view-payment.php:24
+#: templates/shortcodes/receipt.php:28
+#: templates/shortcodes/user-payments.php:20
+#: templates/shortcodes/user-payments.php:48
+#@ provip
+msgid "Reference Key"
+msgstr "کلید پیگیری"
+
+#: inc/payment/class-pro-vip-payment.php:200
+#: inc/views/admin/settings/plans-field.php:22
+#: inc/views/admin/settings/plans-field.php:72
+#@ provip
+msgid "ID"
+msgstr "شناسه"
+
+#: inc/views/admin/payments/view-payment.php:88
+#@ provip
+msgid "Custom Values"
+msgstr "مقادیر دلخواه"
+
+#: inc/payment/class-pro-vip-payment.php:205
+#@ provip
+msgid "Plan Data"
+msgstr "اطلاعات پلن"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:258
+#@ provip
+msgid "Delete"
+msgstr "حذف"
+
+#: inc/admin/payments/class-pro-vip-admin-payments.php:262
+#@ provip
+msgid "View"
+msgstr "مشاهده"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:133
+#@ provip
+msgid "User's Payments"
+msgstr "پرداخت‌های کاربر"
+
+#: templates/shortcodes/user-payments.php:7
+#@ provip
+msgid "No payment"
+msgstr "پرداختی وجود ندارد."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:128
+#@ provip
+msgid "Failed Payment Page"
+msgstr "صفحه پرداخت ناموفق"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:132
+#@ provip
+msgid "The [pv-user-payments] short code should be on this page."
+msgstr "کد میانبر [pv-user-payments] باید در این صفحه باشد."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:252
+#: inc/functions.php:200
+#@ default
+#@ provip
+msgid "You have to login first.<br/>[pv-login-form]"
+msgstr "ابتدا باید وارد سایت شوید. <br/> [pv-login-form]"
+
+#: templates/shortcodes/user-plan.php:8
+#, php-format
+#@ default
+msgid "You're not a %s member. "
+msgstr ""
+

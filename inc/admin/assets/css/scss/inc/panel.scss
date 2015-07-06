@@ -1,0 +1,159 @@
+.wpVIP {
+  .form-tab {
+    > h3 {
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 15px;
+      margin-top: 30px;
+      color: #665980;
+    }
+  }
+  .wv-repeater {
+    .items {
+      & .item:after,
+      &:after {
+        content: " ";
+        clear: both;
+        width: 100%;
+        display: table;
+        height: 1px;
+      }
+      &.sortable {
+        .ui-state-highlight {
+          height: 50px;
+          width: 100%;
+          background-color: rgba(0, 0, 0, .1);
+          margin: 5px 0 19px 0;
+        }
+      }
+    }
+    p {
+      display: inline-block;
+      margin: 0 5px 10px 0;
+      float: left;
+      &, input {
+        font-weight: normal;
+      }
+    }
+    .remove {
+      color: #FFF;
+      text-decoration: none;
+      font-size: 90%;
+      display: inline-block;
+      background: #E45757;
+      padding: 3px 8px;
+      border-radius: 3px;
+      margin-top: 22px;
+    }
+  }
+
+  .sortable {
+    .handle {
+      display: inline-block;
+      width: 7px;
+      height: 16px;
+      background-image: url("../img/sortable-handle.png");
+      float: left;
+      margin-right: 10px;
+      background-size: contain;
+      margin-top: 27px;
+      cursor: move; /* fallback if grab cursor is unsupported */
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+      &:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+      }
+    }
+  }
+
+  .phoenix-form-group {
+
+    &.plans{
+      .plan{
+        &:not(:last-child){
+          border-bottom: 1px solid #D5D5D5;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+        p.cost {
+          max-width: 350px;
+          label{
+            label{
+              position: relative;
+              span{
+                position: absolute;
+                background: #E5E5E5;
+                padding: 4px 5px 4px;
+                width: 54px;
+                border-right: 1px solid #CDCDCD;
+                text-align: center;
+                font-size: 100%;
+                font-weight: normal;
+              }
+              input{
+                padding-left: 75px;
+                box-sizing: border-box;
+                max-width: 195px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    &.default_vip_roles {
+      .checkbox {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    &.gateways {
+      .gateways-table {
+        .gateway{
+          cursor: move; /* fallback if grab cursor is unsupported */
+          cursor: grab;
+          cursor: -moz-grab;
+          cursor: -webkit-grab;
+          &:active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+          }
+        }
+      }
+    }
+  }
+
+  .gateway-settings{
+    margin: 15px 10px 10px;
+    > div {
+      padding: 10px 20px;
+      background: #F0F0F0;
+      border: 2px solid #DADADA;
+      display: none;
+    }
+  }
+}
+
+body.rtl {
+  .wv-repeater {
+    .items {
+      &.sortable {
+        .handle {
+          float: right;
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+    p {
+      margin: 0 0 10px 5px;
+      float: right;
+    }
+  }
+}

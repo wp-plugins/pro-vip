@@ -1,0 +1,87 @@
+@-webkit-keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(.97);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes thumb {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(.97);
+  }
+  100% {
+    -moz-transform: scale(.97);
+  }
+}
+
+@keyframes thumb {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.97);
+  }
+  100% {
+    transform: scale(.97);
+  }
+}
+
+.wv-btn {
+  $background-color: #464646;
+  $color: #fff;
+
+  background-color: $background-color;
+  background-image: none !important;
+  box-shadow: none !important;
+  display: inline-block;
+  padding: 5px 14px;
+  color: $color;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2px;
+  font-size: 100%;
+  border: 0;
+  outline: 0 !important;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+
+  @include box-sizing(border-box);
+  @include appearance(none);
+
+  &:hover {
+    color: darken($color, 2%);
+    background-color: darken($background-color, 2%);
+    @include animation(thumb 200ms linear 2);
+    @include transform-origin(50% 50%);
+  }
+  &:active {
+    background-color: darken($background-color, 14%);
+  }
+  &.small{
+    padding: 5px 12px;
+    font-size: 95%;
+  }
+
+
+  &.primary {
+    $background-color: #2ECC71;
+    background-color: $background-color;
+    &:hover {
+      color: darken($color, 2%);
+      background-color: darken($background-color, 2%);
+    }
+    &:active {
+      background-color: darken($background-color, 14%);
+    }
+
+  }
+}

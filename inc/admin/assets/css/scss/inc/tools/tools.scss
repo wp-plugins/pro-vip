@@ -1,0 +1,20 @@
+div.provip-tools{
+
+  ul{
+    margin-top: 30px;
+    li{
+      display: inline-block;
+    }
+    a{
+      text-decoration: none;
+      background-color: #383838;
+      display: inline-block;
+      padding: 10px 15px;
+      color: #EDEDED;
+      border-radius: 3px;
+    }
+  }
+
+}
+
+@import "vip-bulk-edit";

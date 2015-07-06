@@ -1,0 +1,19 @@
+.pv-vip-column{
+
+  .plans{
+    margin: 10px 0;
+    strong.plan {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid #D2D2D2;
+      border-radius: 4px;
+      color: #515151;
+      cursor: pointer;
+      font-weight: normal;
+    }
+    .tooltip-content{
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,155 @@
+.provip-file-metabox {
+
+  background-color: rgba(48, 82, 155, 0.05);
+  padding: 20px;
+  text-align: center;
+  margin: 20px -1px 8px 0;
+
+  .uploader {
+    &.big {
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      display: none;
+      label {
+        padding: 4px 40px;
+        height: auto;
+        position: relative;
+
+      }
+    }
+
+    label.button {
+      position: relative;
+      span {
+        position: relative;
+        z-index: 2;
+      }
+      span.progress-bar {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: block;
+        background: rgba(195, 245, 220, 0.89);
+        z-index: 1;
+      }
+      input[type="file"] {
+        display: none;
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  .files-container {
+    > span.tip {
+      text-align: right;
+      display: block;
+      color: #808080;
+      font-style: italic;
+      font-size: 90%;
+    }
+    > .uploader {
+      text-align: right;
+      label.button {
+        height: 24px;
+        line-height: 23px;
+      }
+      span {
+        font-size: 85%;
+      }
+    }
+    .files {
+      > div {
+        background: rgba(255, 255, 255, 0.83);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        &:hover {
+          cursor: move; /* fallback if grab cursor is unsupported */
+          cursor: grab;
+          cursor: -moz-grab;
+          cursor: -webkit-grab;
+        }
+        &:active {
+          cursor: grabbing;
+          cursor: -moz-grabbing;
+          cursor: -webkit-grabbing;
+        }
+        label {
+//          &.price {
+//            max-width: 30%;
+//          }
+        }
+        p.file-actions {
+          a,
+          label,
+          span {
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+          }
+          a.delete-file {
+            color: red;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .settings {
+    text-align: left;
+    margin-top: -45px;
+    h3 {
+      margin: 35px 0 0 0 !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 6px 0 !important;
+    }
+
+    .single-sale-settings {
+      display: none;
+    }
+  }
+}
+
+.wp-vip-uploader213123 {
+
+  .current-file {
+
+  }
+  .file-uploader {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    label {
+      span {
+        position: relative;
+        z-index: 2;
+      }
+      span.preloader {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: block;
+        background: rgba(195, 245, 220, 0.89);
+        z-index: 1;
+      }
+      padding: 4px 40px;
+      height: auto;
+      position: relative;
+      input[type="file"] {
+        display: none;
+      }
+    }
+  }
+
+}

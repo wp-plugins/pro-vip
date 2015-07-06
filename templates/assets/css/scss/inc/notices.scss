@@ -1,0 +1,25 @@
+.pv-notices{
+  margin-bottom: 20px;
+  > p {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    color: #111111;
+    font-size: 95%;
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &.error{
+      background-color: #F4AEA7;
+      color: #69312D;
+      border-color: #C28782;
+    }
+    &.success{
+      background-color: #B9EAD1;
+      color: #3F8462;
+      border-color: #95C5AD;
+    }
+  }
+}

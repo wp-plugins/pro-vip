@@ -1,0 +1,30 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+/**
+ * @var $pvFile Pro_VIP_File
+ */
+global $pvFile;
+get_header(); ?>
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<?php do_action( 'pro_vip_template_before_loop' ); ?>
+
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+				Pro_VIP_Template::load( 'content-' . ( $pvFile ? 'single-download' : 'download-none' ) );
+				?>
+
+			<?php endwhile; // end of the loop. ?>
+
+		</div>
+		<!-- #content -->
+	</div><!-- #primary -->
+
+<?php get_sidebar()
+?>
+<?php get_footer(); ?>
