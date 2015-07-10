@@ -1,3 +1,0 @@
-<p class="error">
-	<?= $message ?>
-</p>
