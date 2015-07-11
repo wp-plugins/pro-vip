@@ -98,7 +98,7 @@ LIMIT 1";
 		$table = $wpdb->prefix . 'vip_purchases';
 
 		$sql = "SELECT *
-FROM bp_vip_purchases
+FROM $table
 ORDER BY purchase_date DESC";
 
 		if ( $limit && is_numeric( $limit ) ) {
