@@ -66,12 +66,12 @@ function pvActivation() {
 	dbDelta( $sql );
 
 
-  flush_rewrite_rules();
+  add_option( 'pv_flush_rules', 'true' );
 }
 
 
 register_deactivation_hook( PRO_VIP_PLUGIN_FILE, 'pvDeactivation' );
 
 function pvDeactivation() {
-  flush_rewrite_rules();
+  delete_option( 'pv_flush_rules' );
 }

@@ -64,6 +64,9 @@ final class Pro_VIP {
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueueAssets' ) );
 
+		add_action( 'init', array( $this, 'flushRewriteRules' ), 9999 );
+
+
 		do_action( 'pro_vip_init', $this );
 
 //		pvAddNotice( 'Hello World :D' );
@@ -160,6 +163,14 @@ final class Pro_VIP {
 		}
 		$this::$session = WP_Session::get_instance();
 	}
+
+	public function flushRewriteRules() {
+		if ( get_option( 'pv_flush_rules' ) == 'true' ) {
+			flush_rewrite_rules();
+			delete_option( 'pv_flush_rules' );
+		}
+	}
+
 }
 
 

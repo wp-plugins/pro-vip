@@ -28,5 +28,3 @@ function pvPrintNotices() {
 	echo '</div>';
 
 }
-
-add_action( 'pro_vip_template_before_loop', 'pvPrintNotices' );

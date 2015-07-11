@@ -1,6 +1,7 @@
 jQuery( function( $ ){
 
 	$.modal.defaults.modalClass = 'wv-modal';
+	$.modal.defaults.zIndex = 9999;
 	$.modal.defaults.animationDuration = 200;
 
 	//var proVip = proVip || {};

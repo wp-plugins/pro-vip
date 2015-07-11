@@ -47,8 +47,6 @@ class Pro_VIP_Shortcodes {
 	public function receipt() {
 		ob_start();
 
-		do_action( 'pro_vip_template_before_loop' );
-
 		Pro_VIP_Template::load( 'shortcodes/receipt', '', array( 'payment' => Pro_VIP::get( 'payment' ) ) );
 
 		return ob_get_clean();

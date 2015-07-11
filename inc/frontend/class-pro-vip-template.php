@@ -61,17 +61,7 @@ class Pro_VIP_Template {
 		$this->downloadsSingle();
 		$this->paymentSuccessPage();
 		$this->paymentFailedPage();
-
-		add_filter( 'the_content', function ( $content ) {
-			if ( ! is_singular( Pro_VIP_Admin_Files::$postTypeId ) ) {
-				return $content;
-			}
-			$GLOBALS[ 'pvFile' ] = Pro_VIP_File::find( get_the_ID() );
-			ob_start();
-			Pro_VIP_Template::load( 'content-' . ( $GLOBALS[ 'pvFile' ] ? 'single-download' : 'download-none' ) );
-
-			return $content . ob_get_clean();
-		} );
+		add_filter( 'the_content', array( $this, 'filterTheContent' ) );
 
 		$pages = array( 'plans_page', 'success_page', 'failed_page', 'payments_page' );
 		foreach ( $pages as $page ) {
@@ -83,6 +73,27 @@ class Pro_VIP_Template {
 				Pro_VIP::set( '_is_pro_vip', true );
 			}
 		}
+
+	}
+
+	public function filterTheContent( $content ) {
+
+		if ( is_main_query() ) {
+			ob_start();
+			pvPrintNotices();
+			$notices = ob_get_clean();
+			$content = $notices . $content;
+		}
+
+		if ( ! is_singular( Pro_VIP_Admin_Files::$postTypeId ) ) {
+			return $content;
+		}
+		$GLOBALS[ 'pvFile' ] = Pro_VIP_File::find( get_the_ID() );
+		ob_start();
+		Pro_VIP_Template::load( 'content-' . ( $GLOBALS[ 'pvFile' ] ? 'single-download' : 'download-none' ) );
+
+
+		return $content . ob_get_clean();
 	}
 
 
