@@ -88,7 +88,7 @@ class Pro_VIP_Admin_Settings {
 		) )->label( __( 'Currency Position', 'provip' ) );
 
 		$fields->textfield( 'price_thousand_sep' )->std_val( ',' )->label( __( 'Thousand Separator', 'provip' ) );
-		$fields->textfield( 'price_decimal_sep' )->std_val( '2' )->label( __( 'Decimal Separator', 'provip' ) );
+		$fields->textfield( 'price_decimal_sep' )->std_val( ',' )->label( __( 'Decimal Separator', 'provip' ) );
 		$fields->textfield( 'price_num_decimals' )->std_val( '2' )->label( __( 'Number of Decimals', 'provip' ) );
 
 		do_action( 'pro_vip_settings_general_after', $panel );

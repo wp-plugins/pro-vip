@@ -9,7 +9,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 
 
 <div class="wv-single-download <?= $canDownload ? 'downloadable' : '' ?>">
-	<h3 class="title">Download Files</h3>
+	<h3 class="title"><?= __( 'Download Files', 'provip' ) ?></h3>
 
 	<?php if ( is_user_logged_in() ) { ?>
 		<div class="files-list">
@@ -20,9 +20,9 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 				<div class="file">
 
 					<span class="file-name"><?= $pvFile::getFileDlName() ?></span>
-					<a class="download button wv-btn primary small" href="<?= $pvFile::downloadUrl() ?>">Download</a>
+					<a class="download button wv-btn primary small" href="<?= $pvFile::downloadUrl() ?>"><?= __( 'Download', 'provip' ) ?></a>
 					<?php if ( $purchaseEnabled ) : ?>
-						<a class="purchase button wv-btn primary small" href="#purchase-file" rel="modal:open">Purchase</a>
+						<a class="purchase button wv-btn primary small" href="#purchase-file" rel="modal:open"><?= __( 'Purchase', 'provip' ) ?></a>
 						<div class="file-data" style="display: none;">
 							<p class="file-index"><?= $pvFile::fileIndex() ?></p>
 

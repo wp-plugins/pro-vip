@@ -29,7 +29,7 @@ class Pro_VIP_Admin_Files {
 		$labels = array(
 			'name'               => _x( 'Files', 'Post Type General Name', 'provip' ),
 			'singular_name'      => _x( 'File', 'Post Type Singular Name', 'provip' ),
-			'menu_name'          => __( 'Files', 'provip' ),
+			'menu_name'          => __( 'Pro-VIP', 'provip' ),
 			'name_admin_bar'     => __( 'Files', 'provip' ),
 			'parent_item_colon'  => __( 'Parent Item:', 'provip' ),
 			'all_items'          => __( 'Files', 'provip' ),

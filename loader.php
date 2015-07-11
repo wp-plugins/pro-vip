@@ -4,7 +4,7 @@ Plugin Name: Pro-VIP
 Plugin URI: http://pro-wp.ir/wp-vip
 Description: Wordpress VIP Plugin
 Author: Pro-WP Team
-Version: 0.1
+Version: 0.1.1
 Author URI: http://pro-wp.ir
 */
 
@@ -25,7 +25,7 @@ function pv(){
 }
 pv();
 
-register_activation_hook( PRO_VIP_PLUGIN_FILE, 'wpvActivation' );
+register_activation_hook( PRO_VIP_PLUGIN_FILE, 'pvActivation' );
 
 function pvActivation() {
 
@@ -65,5 +65,13 @@ function pvActivation() {
 
 	dbDelta( $sql );
 
+
+  flush_rewrite_rules();
 }
 
+
+register_deactivation_hook( PRO_VIP_PLUGIN_FILE, 'pvDeactivation' );
+
+function pvDeactivation() {
+  flush_rewrite_rules();
+}

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Pro-VIP v0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-07-06 13:38:25+0000\n"
+"PO-Revision-Date: 2015-07-11 18:52:41+0000\n"
 "Last-Translator: vahid <vahidd.com@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -120,7 +120,6 @@ msgctxt "Post Type Singular Name"
 msgid "File"
 msgstr "فایل"
 
-#: inc/admin/files/class-pro-vip-admin-files.php:32
 #: inc/admin/files/class-pro-vip-admin-files.php:33
 #: inc/admin/files/class-pro-vip-admin-files.php:35
 #@ provip
@@ -1124,6 +1123,7 @@ msgstr "نام خانوادگی"
 msgid "Email Address"
 msgstr "آدرس ایمیل"
 
+#: templates/content-single-download.php:25
 #: templates/content-single-download.php:118
 #: templates/plans.php:107
 #@ provip
@@ -1440,4 +1440,19 @@ msgstr "ابتدا باید وارد سایت شوید. <br/> [pv-login-form]"
 #@ default
 msgid "You're not a %s member. "
 msgstr ""
+
+#: inc/admin/files/class-pro-vip-admin-files.php:32
+#@ provip
+msgid "Pro-VIP"
+msgstr "پرو-وی‌آی‌پی"
+
+#: templates/content-single-download.php:12
+#@ provip
+msgid "Download Files"
+msgstr "دانلود فایل‌ها"
+
+#: templates/content-single-download.php:23
+#@ provip
+msgid "Download"
+msgstr "دانلود"
 
