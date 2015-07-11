@@ -35,31 +35,33 @@ function pvActivation() {
 
 
 	$table = $wpdb->prefix . 'vip_users';
-	$sql   = "CREATE TABLE $table IF NOT EXISTS (
+	$sql   = "CREATE TABLE IF NOT EXISTS $table (
   ID bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   user_ID bigint(20) unsigned NOT NULL,
-  vip_level varchar(255) CHARACTER SET utf8 DEFAULT 'vip',
+  vip_level varchar(255) DEFAULT '0',
   start_date datetime DEFAULT NULL,
   update_date datetime DEFAULT NULL,
   expiration_date datetime DEFAULT NULL,
+  PRIMARY KEY (ID),
   KEY user_ID (user_ID)
-) $charset_collate;";
+) $charset_collate";
 
 	dbDelta( $sql );
 
 
 	$table = $wpdb->prefix . 'vip_purchases';
-	$sql   = "CREATE TABLE $table IF NOT EXISTS (
-  ID bigint(20) NOT NULL AUTO_INCREMENT,
-  user_ID bigint(20) unsigned NOT NULL,
-  purchase_date datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  file_ID bigint(20) unsigned NOT NULL,
-  file_index int(11) NOT NULL,
-  ip varchar(15) NOT NULL,
-  KEY user_ID (user_ID),
+	$sql   = "CREATE TABLE IF NOT EXISTS $table (
+  ID            BIGINT(20)  NOT NULL AUTO_INCREMENT,
+  user_ID       BIGINT(20) UNSIGNED NOT NULL,
+  purchase_date DATETIME    NOT NULL DEFAULT '0000-00-00 00:00:00',
+  file_ID       BIGINT(20) UNSIGNED NOT NULL,
+  file_index    INT(11)     NOT NULL,
+  ip            VARCHAR(15) NOT NULL,
+  PRIMARY KEY (ID),
+  KEY user_ID( user_ID),
   KEY file_ID (file_ID),
   KEY file_index (file_index)
-) $charset_collate;";
+  ) $charset_collate";
 
 	dbDelta( $sql );
 
