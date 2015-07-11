@@ -1,0 +1,82 @@
+.wrap.provip-dashboard {
+
+  position: relative;
+
+  .left {
+    width: 390px;
+    float: left;
+
+  }
+  .right {
+    width: calc(100% - 400px);
+    float: right;
+
+    .box {
+      width: 100%;
+
+    }
+  }
+
+  .box {
+    background: #F7F7F7;
+    padding: 20px 10px;
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: -1px 2px 0 0 rgba(128, 128, 128, 0.17);
+    p:last-child {
+      margin-bottom: 0;
+    }
+    h3 {
+      margin: -20px -10px 10px -10px;
+      padding: 10px;
+      border-bottom: 1px solid #DBDBDB;
+      background-color: rgba(0, 0, 0, 0.02);
+      color: #474747;
+    }
+  }
+
+}
+
+table.pv-statistic-table {
+  tr {
+    td {
+      border-bottom: 1px solid #dbdbdb;
+      border-right: 1px solid #dbdbdb;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+    &.top-border {
+      td {
+        border-top: 1px solid #c8c8c8;
+      }
+    }
+  }
+  td {
+    text-align: center;
+    padding: 15px;
+    strong {
+      display: block;
+    }
+    > span {
+      color: #FFF;
+      background-color: #32B66A;
+      display: inline-block;
+      margin-top: 15px;
+      padding: 5px 10px;
+      a {
+        color: #fafafa;
+        text-decoration: underline;
+      }
+    }
+
+  }
+}

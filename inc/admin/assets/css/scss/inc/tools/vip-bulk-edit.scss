@@ -1,0 +1,17 @@
+.provip-bulk-edit {
+  form {
+    background: rgba(104, 166, 194, 0.02);
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 2px solid rgba(68, 76, 79, 0.13);
+    p{
+      margin-bottom: 20px;
+    }
+  }
+  .advanced{
+    p{
+      display: none;
+    }
+  }
+}

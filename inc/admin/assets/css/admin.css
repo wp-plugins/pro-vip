@@ -1,0 +1,412 @@
+.pv-form-group {
+  padding: 20px 10px; }
+
+.pv-form-group:not(:last-child) {
+  border-bottom: 1px solid #E2E2E2; }
+
+
+
+.pv-form-group label {
+  width: 100%;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px; }
+
+.pv-form-group.multiselect .items {
+  margin: 0 -10px; }
+
+.pv-form-group.multiselect .items:after {
+  content: " ";
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 0; }
+
+.pv-form-group.multiselect .item {
+  width: 140px;
+  height: 70px;
+  background-color: #FDFDFD;
+  border: 1px solid #F2F2F2;
+  margin: 0 10px;
+  float: left;
+  transition: box-shadow 30ms;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table; }
+
+body.rtl .pv-form-group.multiselect .item {
+  float: right; }
+
+.pv-form-group.multiselect .item .label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #6F6F6F; }
+
+.pv-form-group.multiselect .item.checked {
+  box-shadow: inset 0 0 0 2px #89DAB8;
+  border-color: #89DAB8; }
+
+.pv-form-group.multiselect .item input {
+  display: none; }
+
+.pv-media-field button {
+  margin-bottom: 30px !important;
+  padding: 0 17px 1px !important;
+  height: 35px !important; }
+.pv-media-field .links .item {
+  position: relative;
+  float: left;
+  margin-right: 25px;
+  width: 100px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.05) no-repeat center center; }
+  .pv-media-field .links .item.image {
+    background-size: cover; }
+  .pv-media-field .links .item p {
+    margin: 0; }
+  .pv-media-field .links .item .remove {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: #E25E5E;
+    color: #FFF;
+    padding: 0 5px 0 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer; }
+    .pv-media-field .links .item .remove:hover {
+      background: #b74c4c; }
+  .pv-media-field .links .item .link {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    font-size: 11px;
+    background: #3D3D3D;
+    color: #FFF;
+    padding: 0 5px;
+    box-sizing: border-box; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+.red-animation {
+  background-color: rgba(240, 25, 25, 0.2) !important;
+  -webkit-transition: background-color 300ms ease-in-out;
+  -moz-transition: background-color 300ms ease-in-out;
+  -ms-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out; }
+
+.wpVIP .form-tab > h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+  margin-top: 30px;
+  color: #665980; }
+.wpVIP .wv-repeater .items .item:after, .wpVIP .wv-repeater .items:after {
+  content: " ";
+  clear: both;
+  width: 100%;
+  display: table;
+  height: 1px; }
+.wpVIP .wv-repeater .items.sortable .ui-state-highlight {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 5px 0 19px 0; }
+.wpVIP .wv-repeater p {
+  display: inline-block;
+  margin: 0 5px 10px 0;
+  float: left; }
+  .wpVIP .wv-repeater p, .wpVIP .wv-repeater p input {
+    font-weight: normal; }
+.wpVIP .wv-repeater .remove {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 90%;
+  display: inline-block;
+  background: #E45757;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-top: 22px; }
+.wpVIP .sortable .handle {
+  display: inline-block;
+  width: 7px;
+  height: 16px;
+  background-image: url("../img/sortable-handle.png");
+  float: left;
+  margin-right: 10px;
+  background-size: contain;
+  margin-top: 27px;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab; }
+  .wpVIP .sortable .handle:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing; }
+.wpVIP .phoenix-form-group.plans .plan:not(:last-child) {
+  border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+.wpVIP .phoenix-form-group.plans .plan p.cost {
+  max-width: 350px; }
+  .wpVIP .phoenix-form-group.plans .plan p.cost label label {
+    position: relative; }
+    .wpVIP .phoenix-form-group.plans .plan p.cost label label span {
+      position: absolute;
+      background: #E5E5E5;
+      padding: 4px 5px 4px;
+      width: 54px;
+      border-right: 1px solid #CDCDCD;
+      text-align: center;
+      font-size: 100%;
+      font-weight: normal; }
+    .wpVIP .phoenix-form-group.plans .plan p.cost label label input {
+      padding-left: 75px;
+      box-sizing: border-box;
+      max-width: 195px; }
+.wpVIP .phoenix-form-group.default_vip_roles .checkbox {
+  display: inline-block;
+  margin-right: 10px; }
+.wpVIP .phoenix-form-group.gateways .gateways-table .gateway {
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab; }
+  .wpVIP .phoenix-form-group.gateways .gateways-table .gateway:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing; }
+.wpVIP .gateway-settings {
+  margin: 15px 10px 10px; }
+  .wpVIP .gateway-settings > div {
+    padding: 10px 20px;
+    background: #F0F0F0;
+    border: 2px solid #DADADA;
+    display: none; }
+
+body.rtl .wv-repeater .items.sortable .handle {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px; }
+body.rtl .wv-repeater p {
+  margin: 0 0 10px 5px;
+  float: right; }
+
+.provip-file-metabox {
+  background-color: rgba(48, 82, 155, 0.05);
+  padding: 20px;
+  text-align: center;
+  margin: 20px -1px 8px 0; }
+  .provip-file-metabox .uploader.big {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    display: none; }
+    .provip-file-metabox .uploader.big label {
+      padding: 4px 40px;
+      height: auto;
+      position: relative; }
+  .provip-file-metabox .uploader label.button {
+    position: relative; }
+    .provip-file-metabox .uploader label.button span {
+      position: relative;
+      z-index: 2; }
+    .provip-file-metabox .uploader label.button span.progress-bar {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: block;
+      background: rgba(195, 245, 220, 0.89);
+      z-index: 1; }
+    .provip-file-metabox .uploader label.button input[type="file"] {
+      display: none; }
+  .provip-file-metabox .uploader input[type="file"] {
+    display: none; }
+  .provip-file-metabox .files-container > span.tip {
+    text-align: right;
+    display: block;
+    color: #808080;
+    font-style: italic;
+    font-size: 90%; }
+  .provip-file-metabox .files-container > .uploader {
+    text-align: right; }
+    .provip-file-metabox .files-container > .uploader label.button {
+      height: 24px;
+      line-height: 23px; }
+    .provip-file-metabox .files-container > .uploader span {
+      font-size: 85%; }
+  .provip-file-metabox .files-container .files > div {
+    background: rgba(255, 255, 255, 0.83);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.09); }
+    .provip-file-metabox .files-container .files > div:hover {
+      cursor: move;
+      /* fallback if grab cursor is unsupported */
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab; }
+    .provip-file-metabox .files-container .files > div:active {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing; }
+    .provip-file-metabox .files-container .files > div p.file-actions a,
+    .provip-file-metabox .files-container .files > div p.file-actions label,
+    .provip-file-metabox .files-container .files > div p.file-actions span {
+      margin: 0 10px;
+      display: inline-block;
+      text-decoration: none; }
+    .provip-file-metabox .files-container .files > div p.file-actions a.delete-file {
+      color: red; }
+  .provip-file-metabox .settings {
+    text-align: left;
+    margin-top: -45px; }
+    .provip-file-metabox .settings h3 {
+      margin: 35px 0 0 0 !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 6px 0 !important; }
+    .provip-file-metabox .settings .single-sale-settings {
+      display: none; }
+
+.wp-vip-uploader213123 .file-uploader {
+  padding: 20px;
+  margin: 0;
+  text-align: center; }
+  .wp-vip-uploader213123 .file-uploader label {
+    padding: 4px 40px;
+    height: auto;
+    position: relative; }
+    .wp-vip-uploader213123 .file-uploader label span {
+      position: relative;
+      z-index: 2; }
+    .wp-vip-uploader213123 .file-uploader label span.preloader {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: block;
+      background: rgba(195, 245, 220, 0.89);
+      z-index: 1; }
+    .wp-vip-uploader213123 .file-uploader label input[type="file"] {
+      display: none; }
+
+div.provip-tools ul {
+  margin-top: 30px; }
+  div.provip-tools ul li {
+    display: inline-block; }
+  div.provip-tools ul a {
+    text-decoration: none;
+    background-color: #383838;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #EDEDED;
+    border-radius: 3px; }
+
+.provip-bulk-edit form {
+  background: rgba(104, 166, 194, 0.02);
+  padding: 10px 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border: 2px solid rgba(68, 76, 79, 0.13); }
+  .provip-bulk-edit form p {
+    margin-bottom: 20px; }
+.provip-bulk-edit .advanced p {
+  display: none; }
+
+.wrap.provip-dashboard {
+  position: relative; }
+  .wrap.provip-dashboard .left {
+    width: 390px;
+    float: left; }
+  .wrap.provip-dashboard .right {
+    width: calc(100% - 400px);
+    float: right; }
+    .wrap.provip-dashboard .right .box {
+      width: 100%; }
+  .wrap.provip-dashboard .box {
+    background: #F7F7F7;
+    padding: 20px 10px;
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: -1px 2px 0 0 rgba(128, 128, 128, 0.17); }
+    .wrap.provip-dashboard .box p:last-child {
+      margin-bottom: 0; }
+    .wrap.provip-dashboard .box h3 {
+      margin: -20px -10px 10px -10px;
+      padding: 10px;
+      border-bottom: 1px solid #DBDBDB;
+      background-color: rgba(0, 0, 0, 0.02);
+      color: #474747; }
+
+table.pv-statistic-table tr td {
+  border-bottom: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb; }
+  table.pv-statistic-table tr td:last-child {
+    border-right: 0; }
+table.pv-statistic-table tr:last-child td {
+  border-bottom: 0; }
+table.pv-statistic-table tr.top-border td {
+  border-top: 1px solid #c8c8c8; }
+table.pv-statistic-table td {
+  text-align: center;
+  padding: 15px; }
+  table.pv-statistic-table td strong {
+    display: block; }
+  table.pv-statistic-table td > span {
+    color: #FFF;
+    background-color: #32B66A;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px; }
+    table.pv-statistic-table td > span a {
+      color: #fafafa;
+      text-decoration: underline; }
+
+body.post-type-provip_payment table.wp-list-table.posts td {
+  padding: 15px;
+  line-height: 2; }
+
+.pv-vip-column .plans {
+  margin: 10px 0; }
+  .pv-vip-column .plans strong.plan {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+    color: #515151;
+    cursor: pointer;
+    font-weight: normal; }
+  .pv-vip-column .plans .tooltip-content {
+    display: none; }
+
+/*# sourceMappingURL=admin.css.map */
