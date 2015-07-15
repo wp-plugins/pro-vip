@@ -164,6 +164,8 @@ abstract class PV_Framework_Form_Field_Type_Base {
 	function __toString() {
 		$return = $this->render();
 
+
+
 		return (string) $return;
 	}
 

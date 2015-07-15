@@ -12,6 +12,11 @@
        'Pro_VIP_Admin_Tools_VIP_Bulk_Edit'     => 'admin/tools/class-pro-vip-admin-tools-vip-bulk-edit.php',
        'Pro_VIP_Admin_Tools'                   => 'admin/tools/class-pro-vip-admin-tools.php',
        'Pro_VIP_Admin_Users_Column'            => 'admin/users/class-pro-vip-admin-users-column.php',
+       'PV_API_VIP_Authentication'             => 'api/class-pv-api-authentication.php',
+       'PV_API_JSON_Handler'                   => 'api/class-pv-api-json-handler.php',
+       'PV_API_Resource'                       => 'api/class-pv-api-resource.php',
+       'PV_API_Server'                         => 'api/class-pv-api-server.php',
+       'PV_API'                                => 'api/class-pv-api.php',
        'Pro_VIP_Cron'                          => 'classes/class-pro-vip-cron.php',
        'Pro_VIP_Currency'                      => 'classes/class-pro-vip-currency.php',
        'Pro_VIP_Downloader'                    => 'classes/class-pro-vip-downloader.php',
@@ -50,5 +55,7 @@
        'Pro_VIP_Member'                        => 'member/class-pro-vip-member.php',
        'Pro_VIP_Payment_Actions'               => 'payment/class-pro-vip-payment-actions.php',
        'Pro_VIP_Payment_Gateway'               => 'payment/class-pro-vip-payment-gateway.php',
-       'Pro_VIP_Payment'                       => 'payment/class-pro-vip-payment.php'
+       'Pro_VIP_Payment'                       => 'payment/class-pro-vip-payment.php',
+       'Pro_VIP_SMS_Actions'                   => 'sms/class-pro-vip-sms-actions.php',
+       'Pro_VIP_SMS'                           => 'sms/class-pro-vip-sms.php'
    );

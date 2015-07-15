@@ -4,7 +4,7 @@ Plugin Name: Pro-VIP
 Plugin URI: http://pro-wp.ir/wp-vip
 Description: Wordpress VIP Plugin
 Author: Pro-WP Team
-Version: 0.1.1
+Version: 0.1.2
 Author URI: http://pro-wp.ir
 */
 

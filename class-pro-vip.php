@@ -20,6 +20,13 @@ final class Pro_VIP {
 
 	public static $session;
 
+	/**
+	 * @var PV_API
+	 */
+	public $api;
+
+	public $version = '0.1.1';
+
 	public static function getInstance() {
 		static $instance;
 		if ( empty( $instance ) ) {
@@ -61,6 +68,11 @@ final class Pro_VIP {
 		Pro_VIP_Filter_Content::instance();
 		Pro_VIP_Shortcodes::instance();
 		Pro_VIP_Template::instance();
+		Pro_VIP_SMS::getInstance();
+
+		if( pvGetOption('enable_api', 'no') == 'yes' ){
+			$this->api = PV_API::instance();
+		}
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueueAssets' ) );
 
