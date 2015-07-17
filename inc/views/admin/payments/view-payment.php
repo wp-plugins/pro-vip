@@ -82,6 +82,18 @@ $hashids = new Hashids( pvGetOption( 'encryption_key', '' ) );
 
 	<?php endif ?>
 
+	<?php
+	if ( ! empty( $payment->type ) ) :
+		?>
+		<tr>
+			<td class="payment-type">
+				<strong><?php _e( 'Payment Type', 'provip' ); ?>:</strong>
+			</td>
+			<td class=""><?= $payment->type ?></td>
+		</tr>
+
+	<?php endif ?>
+
 
 	<tr>
 		<td class="custom">

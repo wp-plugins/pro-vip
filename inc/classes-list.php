@@ -25,6 +25,7 @@
        'Pro_VIP_Notices'                       => 'classes/class-pro-vip-notices.php',
        'Pro_VIP_Session'                       => 'classes/class-pro-vip-session.php',
        'Pro_VIP_Statistic'                     => 'classes/class-pro-vip-statistic.php',
+       'PV_Custom_Payment'                     => 'classes/class-pv-custom-payment.php',
        'Pro_VIP_Email'                         => 'email/class-pro-vip-email.php',
        'Pro_VIP_Frontend_AJAX'                 => 'frontend/class-pro-vip-frontend-ajax.php',
        'Pro_VIP_Shortcodes'                    => 'frontend/class-pro-vip-shortcodes.php',

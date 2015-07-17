@@ -30,6 +30,7 @@ class Pro_VIP_Actions {
 		$this->purchasePlanBeforePayment();
 		$this->paymentReturn();
 		$this->fileSinglePurchase();
+		$this->paymentBefore();
 	}
 
 	protected function actionFileDownload() {
@@ -170,7 +171,7 @@ class Pro_VIP_Actions {
 			}
 
 
-			$payment->process();
+			$payment->proceed();
 
 		}
 	}
@@ -260,7 +261,7 @@ class Pro_VIP_Actions {
 		}
 
 
-		$payment->process();
+		$payment->proceed();
 
 
 		die;
@@ -268,4 +269,47 @@ class Pro_VIP_Actions {
 	}
 
 
+	public function paymentBefore() {
+		if (
+			empty( $_REQUEST[ 'pv-action' ] )
+			|| $_REQUEST[ 'pv-action' ] !== 'do-payment'
+			|| empty( $_REQUEST[ 'pv-payment-type' ] )
+			|| ! is_string( $_REQUEST[ 'pv-payment-type' ] )
+			|| ! isset( $_REQUEST[ 'pv-amount' ] )
+		) {
+			return false;
+		}
+
+		do_action( 'provip_before_payment' );
+		do_action( 'provip_before_payment-' . $_REQUEST[ 'pv-payment-type' ] );
+
+		$errors = array();
+		if ( empty( $_REQUEST[ 'pv-email-address' ] ) || ! is_string( $_REQUEST[ 'pv-email-address' ] ) || ! is_email( $_REQUEST[ 'pv-email-address' ] ) ) {
+			$errors[ __( 'Invalid email address.', 'provip' ) ] = 'error';
+		}
+
+		if ( empty( $_REQUEST[ 'pv-first-name' ] ) || ! is_string( $_REQUEST[ 'pv-first-name' ] ) ) {
+			$errors[ __( 'Empty first name.', 'provip' ) ] = 'error';
+		}
+
+		if ( ! empty( $errors ) ) {
+			foreach ( $errors as $error => $type ) {
+				pvAddNotice( $error, $type );
+			}
+
+			return false;
+		}
+
+		$payment = new Pro_VIP_Payment();
+
+		$payment->custom[ 'first-name' ]         = $_REQUEST[ 'pv-first-name' ];
+		$payment->custom[ 'user-email-address' ] = $_REQUEST[ 'pv-email-address' ];
+		if ( ! empty( $_REQUEST[ 'pv-last-name' ] ) && is_string( $_REQUEST[ 'pv-last-name' ] ) ) {
+			$payment->custom[ 'last-name' ] = $_REQUEST[ 'pv-last-name' ];
+		}
+
+		do_action( 'provip_before_payment_validated', $payment );
+		do_action( 'provip_before_payment_validated-' . $_REQUEST[ 'pv-payment-type' ], $payment );
+
+	}
 }

@@ -31,6 +31,8 @@ Sell files through wordpress
 == Changelog ==
 
 = 0.1.2 - 15/07/2015 =
-* Added - Pro-VIP API.
-* Added - SMS support.
-* Localisation - Updated fa_IR languages files.
+* Added - Pro-VIP API
+* Added - SMS support
+* Added - Custom Payment Form
+* Localisation - Updated fa_IR languages files
+* Bug Fixes

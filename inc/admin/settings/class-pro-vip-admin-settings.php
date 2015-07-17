@@ -379,6 +379,31 @@ Your purchase was successful.
 
 		$fields->html( '<hr/>' );
 
+
+		$fields->html( __( '<h3>Custom Payment</h3>', 'provip' ) );
+
+
+		$fields
+			->textfield( 'email_custom_payment_subject' )
+			->label( __( 'Custom Payment Subject', 'provip' ) )
+			->std_val( __( 'Successful Payment', 'provip' ) );
+
+		$fields
+			->wpEditor( 'email_custom_payment_receipt' )
+			->label( __( 'Custom Payment Receipt', 'provip' ) )
+			->std_val( Pro_VIP_Email::getMail( 'custom-payment' ) )
+			->desc( __( "Available template tags: <br/>
+<code>{{first-name}}</code>: Paymenter's first name<br/>
+<code>{{last-name}}</code>: Paymenter's last name<br/>
+<code>{{name}}</code>: Paymenter's full name<br/>
+<code>{{payment-amount}}</code>: Payment Amount<br/>
+<code>{{payment-gateway}}</code>: Payment Gateway<br/>
+<code>{{payment-date}}</code>: Payment Date<br/>
+", 'provip' ) );
+
+
+		$fields->html( '<hr/>' );
+
 		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
 
 		$fields->closeTab();

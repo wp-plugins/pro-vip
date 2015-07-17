@@ -100,10 +100,19 @@ class Pro_VIP_Payment {
 	}
 
 	public function getGateway() {
+		if ( is_null( $this->gateway ) ) {
+			if ( ! empty( $_REQUEST[ 'pv-gateway' ] ) && is_string( $_REQUEST[ 'pv-gateway' ] ) ) {
+				$this->gateway = $_REQUEST[ 'pv-gateway' ];
+			}
+		}
+
 		return Pro_VIP_Payment_Gateway::getGateway( $this->gateway );
 	}
 
-	public function process() {
+	public function proceed() {
+		if( !empty( $_REQUEST['pv-payment-type'] ) && is_string( $_REQUEST[ 'pv-payment-type' ] ) ){
+			$this->type = $_REQUEST[ 'pv-payment-type' ];
+		}
 		$this->save();
 		$this->getGateway()->beforePayment( $this );
 	}

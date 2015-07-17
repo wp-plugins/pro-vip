@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Pro-VIP v0.1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-07-15 19:07:56+0000\n"
+"PO-Revision-Date: 2015-07-17 20:58:25+0000\n"
 "Last-Translator: vahid <vahidd.com@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,35 +20,37 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: inc/actions/class-pro-vip-actions.php:66
-#: inc/actions/class-pro-vip-actions.php:77
+#: inc/actions/class-pro-vip-actions.php:67
+#: inc/actions/class-pro-vip-actions.php:78
 #@ provip
 msgid "Login Failed."
 msgstr "خطا در ورود."
 
-#: inc/actions/class-pro-vip-actions.php:85
+#: inc/actions/class-pro-vip-actions.php:86
 #, php-format
 #@ provip
 msgid "Oops. You cannot download this file. <a href=\"%s\">Return to site</a>"
 msgstr "شما قادر به دانلود این فایل نیستید. <a href=\"%s\">بازگشت به سایت</a>"
 
-#: inc/actions/class-pro-vip-actions.php:116
+#: inc/actions/class-pro-vip-actions.php:117
 #@ provip
 msgid "Invalid Plan or plan level."
 msgstr "خطا در پلن یا نوع پلن."
 
-#: inc/actions/class-pro-vip-actions.php:120
+#: inc/actions/class-pro-vip-actions.php:121
+#: inc/actions/class-pro-vip-actions.php:288
 #: inc/classes/class-pro-vip-notices.php:94
 #@ provip
 msgid "Invalid email address."
 msgstr "Invalid email address."
 
-#: inc/actions/class-pro-vip-actions.php:124
+#: inc/actions/class-pro-vip-actions.php:125
+#: inc/actions/class-pro-vip-actions.php:292
 #@ provip
 msgid "Empty first name."
 msgstr "فیلد نام خالی است."
 
-#: inc/actions/class-pro-vip-actions.php:227
+#: inc/actions/class-pro-vip-actions.php:228
 #@ provip
 msgid "Single sale not enabled."
 msgstr "فروش تکی فعال نیست."
@@ -254,6 +256,7 @@ msgstr "وضعیت"
 #: inc/views/admin/settings/gateways.php:17
 #: templates/content-single-download.php:64
 #: templates/plans.php:46
+#: templates/shortcodes/payment-form.php:27
 #: templates/shortcodes/receipt.php:57
 #: templates/shortcodes/user-payments.php:22
 #: templates/shortcodes/user-payments.php:50
@@ -458,22 +461,22 @@ msgstr "خرید فایل"
 msgid "File Purchase Receipt"
 msgstr "رسید خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:388
+#: inc/admin/settings/class-pro-vip-admin-settings.php:413
 #@ provip
 msgid "Payment Gateway"
 msgstr "درگاه پرداخت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:403
+#: inc/admin/settings/class-pro-vip-admin-settings.php:428
 #@ provip
 msgid "Other"
 msgstr "دیگر"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:410
+#: inc/admin/settings/class-pro-vip-admin-settings.php:435
 #@ provip
 msgid "Delete Expired Users from Database"
 msgstr "حذف کاربران منقضی شده از دیتابیس"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:416
+#: inc/admin/settings/class-pro-vip-admin-settings.php:441
 #@ provip
 msgid "Encryption Key"
 msgstr "کلید کدگذاری"
@@ -724,38 +727,38 @@ msgid "WP VIP Payment"
 msgstr "پرداخت وی‌آی‌پی"
 
 #: inc/payment/class-pro-vip-payment.php:50
-#: inc/payment/class-pro-vip-payment.php:116
+#: inc/payment/class-pro-vip-payment.php:125
 #: templates/shortcodes/receipt.php:9
 #@ provip
 msgid "Payment not found."
 msgstr "پرداخت یافت نشد."
 
-#: inc/payment/class-pro-vip-payment.php:125
+#: inc/payment/class-pro-vip-payment.php:134
 #@ provip
 msgid "Pending"
 msgstr "معلق"
 
-#: inc/payment/class-pro-vip-payment.php:129
+#: inc/payment/class-pro-vip-payment.php:138
 #@ provip
 msgid "Complete"
 msgstr "تکمیل"
 
-#: inc/payment/class-pro-vip-payment.php:133
+#: inc/payment/class-pro-vip-payment.php:142
 #@ provip
 msgid "Refunded"
 msgstr "پس‌داده شده"
 
-#: inc/payment/class-pro-vip-payment.php:137
+#: inc/payment/class-pro-vip-payment.php:146
 #@ provip
 msgid "Failed"
 msgstr "ناموفق"
 
-#: inc/payment/class-pro-vip-payment.php:141
+#: inc/payment/class-pro-vip-payment.php:150
 #@ provip
 msgid "Abandoned"
 msgstr "رهاشده"
 
-#: inc/payment/class-pro-vip-payment.php:149
+#: inc/payment/class-pro-vip-payment.php:158
 #@ provip
 msgid "Revoked"
 msgstr "لغو شده"
@@ -899,7 +902,7 @@ msgstr "فعال"
 msgid "Plans"
 msgstr "پلن‌ها"
 
-#: inc/payment/class-pro-vip-payment.php:201
+#: inc/payment/class-pro-vip-payment.php:210
 #: inc/views/admin/settings/plans-field.php:29
 #: inc/views/admin/settings/plans-field.php:79
 #: inc/views/admin/settings/vip-levels-field.php:22
@@ -914,7 +917,7 @@ msgstr "نام"
 msgid "Time (in days)"
 msgstr "زمان (روز)"
 
-#: inc/payment/class-pro-vip-payment.php:203
+#: inc/payment/class-pro-vip-payment.php:212
 #: inc/views/admin/settings/plans-field.php:43
 #: inc/views/admin/settings/plans-field.php:93
 #@ provip
@@ -987,7 +990,7 @@ msgstr "دقیقه"
 msgid "Hours"
 msgstr "ساعت"
 
-#: inc/payment/class-pro-vip-payment.php:202
+#: inc/payment/class-pro-vip-payment.php:211
 #: inc/views/admin/tools/bulk-vip-edit/index.php:33
 #: inc/views/admin/tools/edit-user/edit.php:39
 #@ provip
@@ -1006,7 +1009,7 @@ msgstr "هفته"
 msgid "Years"
 msgstr "سال"
 
-#: inc/payment/class-pro-vip-payment.php:199
+#: inc/payment/class-pro-vip-payment.php:208
 #: inc/views/admin/tools/bulk-vip-edit/index.php:42
 #@ provip
 msgid "Level"
@@ -1104,22 +1107,25 @@ msgstr "ویرایش حساب‌های کاربری"
 msgid "Purchase %s"
 msgstr "خرید %s"
 
-#: inc/payment/class-pro-vip-payment.php:198
+#: inc/payment/class-pro-vip-payment.php:207
 #: templates/content-single-download.php:78
 #: templates/plans.php:71
+#: templates/shortcodes/payment-form.php:41
 #@ provip
 msgid "First Name"
 msgstr "نام"
 
 #: templates/content-single-download.php:90
 #: templates/plans.php:83
+#: templates/shortcodes/payment-form.php:53
 #@ provip
 msgid "Last Name"
 msgstr "نام خانوادگی"
 
-#: inc/payment/class-pro-vip-payment.php:206
+#: inc/payment/class-pro-vip-payment.php:215
 #: templates/content-single-download.php:102
 #: templates/plans.php:58
+#: templates/shortcodes/payment-form.php:65
 #@ provip
 msgid "Email Address"
 msgstr "آدرس ایمیل"
@@ -1157,7 +1163,7 @@ msgstr "در حال تغییر مسیر"
 msgid "Redirect Now"
 msgstr "ورود به درگاه"
 
-#: inc/payment/class-pro-vip-payment.php:204
+#: inc/payment/class-pro-vip-payment.php:213
 #: templates/plans.php:16
 #@ provip
 msgid "Plan"
@@ -1182,6 +1188,7 @@ msgid "Payment Status"
 msgstr "وضعیت پرداخت"
 
 #: inc/views/admin/payments/view-payment.php:60
+#: templates/shortcodes/payment-form.php:15
 #: templates/shortcodes/receipt.php:64
 #: templates/shortcodes/user-payments.php:23
 #: templates/shortcodes/user-payments.php:51
@@ -1298,8 +1305,8 @@ msgstr "تنظیمات ذخیره شدند."
 msgid "Panel reset."
 msgstr "تنظیمات ریست شدند."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:421
-#: inc/admin/settings/class-pro-vip-admin-settings.php:426
+#: inc/admin/settings/class-pro-vip-admin-settings.php:446
+#: inc/admin/settings/class-pro-vip-admin-settings.php:451
 #@ provip
 msgid "Filter content metabox in post types"
 msgstr "متاباکس فیلتر نوشته در پست‌تایپ‌های"
@@ -1363,7 +1370,7 @@ msgstr "ویرایش"
 msgid "Payment Deleted"
 msgstr "پرداخت حذف شد."
 
-#: inc/payment/class-pro-vip-payment.php:145
+#: inc/payment/class-pro-vip-payment.php:154
 #@ provip
 msgid "Trash"
 msgstr "سطل‌زباله"
@@ -1382,19 +1389,19 @@ msgstr "آیتم‌ها قابل Sort هستند."
 msgid "Reference Key"
 msgstr "کلید پیگیری"
 
-#: inc/payment/class-pro-vip-payment.php:200
+#: inc/payment/class-pro-vip-payment.php:209
 #: inc/views/admin/settings/plans-field.php:22
 #: inc/views/admin/settings/plans-field.php:72
 #@ provip
 msgid "ID"
 msgstr "شناسه"
 
-#: inc/views/admin/payments/view-payment.php:88
+#: inc/views/admin/payments/view-payment.php:100
 #@ provip
 msgid "Custom Values"
 msgstr "مقادیر دلخواه"
 
-#: inc/payment/class-pro-vip-payment.php:205
+#: inc/payment/class-pro-vip-payment.php:214
 #@ provip
 msgid "Plan Data"
 msgstr "اطلاعات پلن"
@@ -1429,7 +1436,7 @@ msgstr "صفحه پرداخت ناموفق"
 msgid "The [pv-user-payments] short code should be on this page."
 msgstr "کد میانبر [pv-user-payments] باید در این صفحه باشد."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:425
+#: inc/admin/settings/class-pro-vip-admin-settings.php:450
 #: inc/functions.php:200
 #@ default
 #@ provip
@@ -1468,22 +1475,22 @@ msgstr "اس‌ام‌اس"
 msgid "<a href=\"%s\">WordPress SMS</a> Plugin is not installed."
 msgstr ""
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:434
+#: inc/admin/settings/class-pro-vip-admin-settings.php:459
 #@ provip
 msgid "API"
 msgstr "ای‌پی‌آی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:442
+#: inc/admin/settings/class-pro-vip-admin-settings.php:467
 #@ provip
 msgid "Enable API"
 msgstr "فعال کردن ای‌پی‌آی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:447
+#: inc/admin/settings/class-pro-vip-admin-settings.php:472
 #@ provip
 msgid "User Authentication API"
 msgstr "ای‌پی‌آی اعتبار سنجی کاربر"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:453
+#: inc/admin/settings/class-pro-vip-admin-settings.php:478
 #@ provip
 msgid "API Key"
 msgstr "کلید ای‌پی‌آی"
@@ -1588,4 +1595,75 @@ msgstr "شماره موبایل"
 #@ provip
 msgid "<a href=\"%s\">WP SMS</a> plugin is not installed. to use sms feature install this plugin."
 msgstr "افزونه <a href=\"%s\">WP SMS</a> نصب نشده است. برای استفاده از قابلیت اس‌ام‌اس ابتدا این افزونه را نصب کنید."
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:383
+#@ provip
+msgid "<h3>Custom Payment</h3>"
+msgstr "<h3>پرداخت دلخواه</h3>"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:388
+#@ provip
+msgid "Custom Payment Subject"
+msgstr "موضوع پرداخت دلخواه"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:389
+#: inc/classes/class-pv-custom-payment.php:82
+#@ provip
+msgid "Successful Payment"
+msgstr "پرداخت موفقیت‌آمیز"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:393
+#@ provip
+msgid "Custom Payment Receipt"
+msgstr "متن پرداخت دلخواه"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:395
+#@ provip
+msgid ""
+"Available template tags: <br/>\n"
+"<code>{{first-name}}</code>: Paymenter's first name<br/>\n"
+"<code>{{last-name}}</code>: Paymenter's last name<br/>\n"
+"<code>{{name}}</code>: Paymenter's full name<br/>\n"
+"<code>{{payment-amount}}</code>: Payment Amount<br/>\n"
+"<code>{{payment-gateway}}</code>: Payment Gateway<br/>\n"
+"<code>{{payment-date}}</code>: Payment Date<br/>\n"
+msgstr ""
+"تگ‌های در دسترس: <br/>\n"
+"<code>{{first-name}}</code>: نام کوچک پرداخت کننده<br/>\n"
+"<code>{{last-name}}</code>: نام خانوادگی پرداخت کننده<br/>\n"
+"<code>{{name}}</code>: نام کامل پرداخت‌کننده<br/>\n"
+"<code>{{payment-amount}}</code>: مقدار پرداخت شده<br/>\n"
+"<code>{{payment-gateway}}</code>: درگاه پرداخت<br/>\n"
+"<code>{{payment-date}}</code>: تاریخ پرداخت<br/>\n"
+
+#: inc/classes/class-pv-custom-payment.php:33
+#@ provip
+msgid "You need to login first."
+msgstr "ابتدا باید وارد سایت شوید."
+
+#: inc/classes/class-pv-custom-payment.php:41
+#@ provip
+msgid "Enter a valid payment amount."
+msgstr "لطفا یک عدد صحیح برای مقدار پرداخت وارد کنید."
+
+#: inc/email/strings.php:10
+#@ provip
+msgid ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>Dear {{name}},</h2>\n"
+"\n"
+"Your payment was successful."
+msgstr ""
+"<h2 style='font-size: 25px; font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333333;'>{{name}} عزیز,</h2>\n"
+"\n"
+"پرداخت شما موفقیت آمیز بود."
+
+#: inc/views/admin/payments/view-payment.php:90
+#@ provip
+msgid "Payment Type"
+msgstr "نوع پرداخت"
+
+#: templates/shortcodes/payment-form.php:82
+#@ provip
+msgid "Pay"
+msgstr "پرداخت"
 

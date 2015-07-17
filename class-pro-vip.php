@@ -69,6 +69,7 @@ final class Pro_VIP {
 		Pro_VIP_Shortcodes::instance();
 		Pro_VIP_Template::instance();
 		Pro_VIP_SMS::getInstance();
+		PV_Custom_Payment::instance();
 
 		if( pvGetOption('enable_api', 'no') == 'yes' ){
 			$this->api = PV_API::instance();
