@@ -54,7 +54,7 @@ class PV_Activation {
   file_index    INT(11)     NOT NULL,
   ip            VARCHAR(15) NOT NULL,
   PRIMARY KEY (ID),
-  KEY user_ID( user_ID),
+  KEY user_email(user_email),
   KEY file_ID (file_ID),
   KEY file_index (file_index)
   ) $charset_collate";

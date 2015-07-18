@@ -159,9 +159,9 @@ class Pro_VIP_Template {
 		wp_enqueue_script( 'pv-scripts', PRO_VIP_URL . 'templates/assets/js/general.js', array( 'jquery' ) );
 		wp_localize_script( 'pv-scripts', 'proVip', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'l10n' => array(
+			'l10n'    => array(
 				'required_field' => __( 'This field is required.', 'provip' ),
-				'valid_email' => __( 'Please enter a valid email address.', 'provip' )
+				'valid_email'    => __( 'Please enter a valid email address.', 'provip' )
 			)
 		) );
 
