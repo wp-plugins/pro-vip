@@ -158,23 +158,50 @@
       margin-bottom: 10px; }
     .wv-single-download .files-list > .file:not(:last-child) {
       margin-bottom: 20px; }
-  .wv-single-download #purchase-file .title {
+  .wv-single-download #pv-purchase-file .title {
     margin: 0 -10px 10px;
     text-align: center; }
-  .wv-single-download #purchase-file table {
+  .wv-single-download #pv-purchase-file table {
     width: calc(100% + 22px);
     margin: 0 -10px; }
-    .wv-single-download #purchase-file table tr td {
+    .wv-single-download #pv-purchase-file table tr td {
       background-color: #F7F7F7;
       padding: 16px 18px; }
-      .wv-single-download #purchase-file table tr td.label {
+      .wv-single-download #pv-purchase-file table tr td.label {
         width: 40%; }
-      .wv-single-download #purchase-file table tr td.input {
-        width: 60%; }
-        .wv-single-download #purchase-file table tr td.input select, .wv-single-download #purchase-file table tr td.input input {
+      .wv-single-download #pv-purchase-file table tr td.input {
+        width: 60%;
+        position: relative; }
+        .wv-single-download #pv-purchase-file table tr td.input select, .wv-single-download #pv-purchase-file table tr td.input input {
           width: 100%;
           box-sizing: border-box; }
-  .wv-single-download #purchase-file p.purchase {
+        .wv-single-download #pv-purchase-file table tr td.input label.error {
+          position: absolute;
+          bottom: 50%;
+          left: 100%;
+          background-color: #DD311F;
+          color: #FFF;
+          padding: 2px 11px;
+          box-sizing: border-box;
+          border-radius: 2px;
+          z-index: 10;
+          font-size: 90%;
+          display: inline-block;
+          margin-bottom: -13px;
+          white-space: nowrap;
+          cursor: pointer; }
+          .wv-single-download #pv-purchase-file table tr td.input label.error:before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid #DD311F;
+            left: -5px;
+            margin-top: -6px; }
+  .wv-single-download #pv-purchase-file p.purchase {
     text-align: center;
     margin: 10px 0 0 0; }
 

@@ -1,7 +1,7 @@
 === Pro VIP ===
 Contributors: Pro-WP
 Tags: vip,membership,downloads,shop
-Donate link: http://pro-wp.ir/donate
+Donate link: http://pro-wp.ir/fa/payment
 Requires at least: 3.6
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -35,4 +35,8 @@ Sell files through wordpress
 * Added - SMS support
 * Added - Custom Payment Form
 * Localisation - Updated fa_IR languages files
+* Bug Fixes
+
+= 0.1.3 - 20/07/2015 =
+* Added - Now guest users can purchase files without registering
 * Bug Fixes

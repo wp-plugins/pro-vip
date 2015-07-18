@@ -205,7 +205,7 @@ class Pro_VIP_File {
 		}
 
 		$link = trailingslashit( site_url() );
-		$link = add_query_arg( array( 'action' => 'wpPurchaseFile', 'fileId' => self::$_tmpFile[ 'post_id' ] ), $link );
+		$link = add_query_arg( array( 'pv-action' => 'single-purchase', 'fileId' => self::$_tmpFile[ 'post_id' ] ), $link );
 
 		return apply_filters( 'pro_vip_file_single_purchase_url', $link, self::$_tmpFile );
 	}
@@ -236,7 +236,7 @@ class Pro_VIP_File {
 
 
 		// If user has purchased this file
-		if ( in_array( self::$_tmpFile[ 'file_id' ], self::getUserPurchasesIds( $user->ID ) ) ) {
+		if ( in_array( self::$_tmpFile[ 'file_id' ], self::getUserPurchasesIds( $user->data->email_address ) ) ) {
 			return apply_filters( 'pro_vip_can_user_download_file', true, $user, self::getFile() );
 		}
 
@@ -250,32 +250,22 @@ class Pro_VIP_File {
 	}
 
 
-	public static function getUserPurchases( $user = null ) {
+	public static function getUserPurchases( $email ) {
 		global $wpdb;
 		$table = $wpdb->prefix . 'vip_purchases';
 
-		if ( ! $user = self::_getUser( $user ) ) {
-			return false;
-		}
 
-		return (array) $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE user_ID = %d", $user->ID ), ARRAY_A );
+		return (array) $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE user_email = %s", $email ), ARRAY_A );
 	}
 
-	public static function getUserPurchasesIds( $user = null ) {
+	public static function getUserPurchasesIds( $email = null ) {
 		global $wpdb;
 		$table = $wpdb->prefix . 'vip_purchases';
 
-		if ( ! $user = self::_getUser( $user ) ) {
-			return false;
-		}
-
-		return $wpdb->get_col( $wpdb->prepare( "SELECT file_ID FROM $table WHERE user_ID = %d", $user->ID ), ARRAY_A );
+		return $wpdb->get_col( $wpdb->prepare( "SELECT file_ID FROM $table WHERE user_email = %s", $email ), ARRAY_A );
 	}
 
-	public static function registerUserFilePurchase( $data = array(), $user = null, $file_id = null, $file_index = null ) {
-		if ( ! $user = self::_getUser( $user ) ) {
-			return false;
-		}
+	public static function registerFilePurchase( $email, $file_id = null, $file_index = null, $data = array() ) {
 		if ( ! is_null( $file_id ) && ! is_null( $file_index ) ) {
 			self::find( $file_id, $file_index );
 		}
@@ -297,7 +287,7 @@ class Pro_VIP_File {
 		$insert = $wpdb->insert(
 			$table,
 			array(
-				'user_ID'       => $user->ID,
+				'user_email'    => $email,
 				'purchase_date' => $data[ 'purchase_date' ],
 				'file_ID'       => self::fileId(),
 				'file_index'    => self::fileIndex(),

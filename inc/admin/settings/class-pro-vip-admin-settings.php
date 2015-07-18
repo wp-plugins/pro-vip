@@ -84,6 +84,7 @@ class Pro_VIP_Admin_Settings {
 				'smsSettings',
 				'gatewaySettings',
 				'apiSettings',
+				'guestPurchase',
 				'otherSettings'
 			) as $tab
 		) {
@@ -194,7 +195,7 @@ class Pro_VIP_Admin_Settings {
 
 		$fields->openTab( 'sms', __( 'SMS', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 		if ( in_array( 'wp-sms/wp-sms.php', get_option( 'active_plugins', array() ) ) ) {
 
@@ -227,7 +228,7 @@ Your purchase was successful.
 Your purchase was successful.
 {{site-name}}', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 		$fields->closeTab();
 
 
@@ -237,7 +238,7 @@ Your purchase was successful.
 	protected function generalSettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'general', __( 'General', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 
 		$fields->multicheckbox( 'default_vip_roles', $this->helper[ 'wpRoles' ] )->label( __( 'Default VIP Roles', 'provip' ) );
@@ -262,7 +263,7 @@ Your purchase was successful.
 		$fields->textfield( 'price_thousand_sep' )->std_val( ',' )->label( __( 'Thousand Separator', 'provip' ) );
 		$fields->textfield( 'price_decimal_sep' )->std_val( ',' )->label( __( 'Decimal Separator', 'provip' ) );
 		$fields->textfield( 'price_num_decimals' )->std_val( '2' )->label( __( 'Number of Decimals', 'provip' ) );
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 
 		$fields->closeTab();
 	}
@@ -270,7 +271,7 @@ Your purchase was successful.
 	protected function vipSettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'vip_settings', __( 'VIP Settings', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 		$fields
 			->dropdown( 'default_vip_level', array( 0 => '-' ) + pvGetLevels() )
@@ -278,13 +279,13 @@ Your purchase was successful.
 			->label( __( 'Default VIP Level', 'provip' ) );
 		$fields->multicheckbox( 'vip_levels', array(), array(), array( $this, 'vipLevelsPlans' ) );
 		$fields->multicheckbox( 'plans', array(), array(), array( $this, 'plansField' ) );
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 		$fields->closeTab();
 	}
 
 	protected function pagesSettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'pages', __( 'Pages', 'provip' ) );
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 		$fields
 			->dropdown( 'plans_page', $this->helper[ 'wpPages' ] )
@@ -306,13 +307,13 @@ Your purchase was successful.
 			->desc( __( 'The [pv-user-payments] short code should be on this page.', 'provip' ) )
 			->label( __( "User's Payments", 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 		$fields->closeTab();
 	}
 
 	protected function emailSettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'emails', __( 'Emails', 'provip' ) );
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 
 		$fields->media( 'email_template_logo' )->multiple( false )->label( __( 'Email Logo', 'provip' ) );
@@ -404,14 +405,14 @@ Your purchase was successful.
 
 		$fields->html( '<hr/>' );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 
 		$fields->closeTab();
 	}
 
 	protected function gatewaySettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'gateways', __( 'Payment Gateway', 'provip' ) );
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 
 		$fields->html( array( $this, 'gatewaysSettingsField' ) );
@@ -419,7 +420,7 @@ Your purchase was successful.
 
 		$fields->multicheckbox( 'gateways', array(), array(), array( $this, 'gatewaysField' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 
 		$fields->closeTab();
 	}
@@ -428,7 +429,7 @@ Your purchase was successful.
 		$fields->openTab( 'other', __( 'Other', 'provip' ) );
 
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 		$fields
 			->dropdown( 'delete_expired_users', $this->helper[ 'yesNo' ] )
@@ -450,7 +451,7 @@ Your purchase was successful.
 			->std_val( __( 'You have to login first.<br/>[pv-login-form]' ) )
 			->label( __( 'Filter content metabox in post types', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 
 		$fields->closeTab();
 	}
@@ -458,7 +459,7 @@ Your purchase was successful.
 	protected function apiSettings( PV_Framework_Form_Builder $fields ) {
 		$fields->openTab( 'api', __( 'API', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
 
 
 		$fields->dropdown(
@@ -477,7 +478,28 @@ Your purchase was successful.
 			->std_val( wp_generate_password( 24, false ) )
 			->label( __( 'API Key', 'provip' ) );
 
-		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in' );
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
+
+		$fields->closeTab();
+	}
+
+
+	protected function guestPurchase( PV_Framework_Form_Builder $fields ) {
+		$fields->openTab( 'guest_purchase', __( 'Guest Purchase', 'provip' ) );
+
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_before_in', $fields );
+
+		$fields->dropdown(
+			'single_file_guest_purchase',
+			$this->helper[ 'yesNo' ]
+		)->label( __( 'Enable single file guest purchase', 'provip' ) );
+
+		$fields->textfield(
+			'single_file_guest_purchase_download_time'
+		)->label( __( 'Download Time (in hours)', 'provip' ) )->std_val( 48 );
+
+
+		do_action( 'pro_vip_settings_' . __FUNCTION__ . '_after_in', $fields );
 
 		$fields->closeTab();
 	}

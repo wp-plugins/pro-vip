@@ -10,8 +10,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 
 <div class="wv-single-download <?= $canDownload ? 'downloadable' : '' ?>">
 	<h3 class="title"><?= __( 'Download Files', 'provip' ) ?></h3>
-
-	<?php if ( is_user_logged_in() ) { ?>
+	<?php if ( pvGetOption( 'single_file_guest_purchase', 'yes' ) == 'yes' || is_user_logged_in() ) { ?>
 		<div class="files-list">
 			<?php foreach ( $pvFile->getFiles() as $file ) :
 				$pvFile->setupFileData( $file );
@@ -22,7 +21,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 					<span class="file-name"><?= $pvFile::getFileDlName() ?></span>
 					<a class="download button wv-btn primary small" href="<?= $pvFile::downloadUrl() ?>"><?= __( 'Download', 'provip' ) ?></a>
 					<?php if ( $purchaseEnabled ) : ?>
-						<a class="purchase button wv-btn primary small" href="#purchase-file" rel="modal:open"><?= __( 'Purchase', 'provip' ) ?></a>
+						<a class="purchase button wv-btn primary small" href="#pv-purchase-file" rel="modal:open"><?= __( 'Purchase', 'provip' ) ?></a>
 						<div class="file-data" style="display: none;">
 							<p class="file-index"><?= $pvFile::fileIndex() ?></p>
 
@@ -41,7 +40,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 
 			$currentUser = wp_get_current_user();
 			?>
-			<form id="purchase-file" method="post" action="<?= $pvFile::singlePurchaseUrl() ?>" style="display: none;;">
+			<form id="pv-purchase-file" method="post" action="<?= $pvFile::singlePurchaseUrl() ?>" style="display: none;;">
 
 				<h2 class="title"><?= sprintf( __( 'Purchase %s', 'provip' ), '<strong class="file-name"></strong>' ) ?></h2>
 
@@ -50,10 +49,10 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 					<?php do_action( 'pro_vip_purchase_file_form_before', $pvFile ) ?>
 
 					<tr>
-						<td>
+						<td class="title">
 							<strong><?= __( 'Price', 'provip' ) ?></strong>
 						</td>
-						<td>
+						<td class="input">
 							<strong class="file-price"></strong>
 						</td>
 					</tr>
@@ -66,9 +65,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 							</label>
 						</td>
 						<td class="input">
-							<?=
-							Pro_VIP_Payment_Gateway::gatewaysListDropdown()
-							?>
+							<?= Pro_VIP_Payment_Gateway::gatewaysListDropdown() ?>
 						</td>
 					</tr>
 
@@ -123,7 +120,7 @@ $purchaseEnabled = $pvFile->singlePurchaseEnabled;
 
 	<?php } else { ?>
 		<p class="login">
-			<span>			<?= __( 'You need to be logged in.', 'provip' ) ?></span>
+			<span><?= __( 'You need to be logged in.', 'provip' ) ?></span>
 			<a href="#wv-login-modal" class="button login wv-btn" rel="modal:open"><?= __( 'Login', 'provip' ) ?></a>
 			<a href="#wv-registration-form" class="button login wv-btn" rel="modal:open"><?= __( 'Register', 'provip' ) ?></a>
 		</p>

@@ -19,7 +19,7 @@ jQuery( function( $ ){
 
 		var
 			$filesList = $downloadContainer.find( '.files-list' ),
-			$purchaseForm = $downloadContainer.find( '#purchase-file' );
+			$purchaseForm = $downloadContainer.find( '#pv-purchase-file' );
 
 
 		$filesList.on( 'click', '.purchase', function(){
@@ -27,6 +27,30 @@ jQuery( function( $ ){
 			$purchaseForm.find( '.file-index' ).val( $data.find( '.file-index' ).text() );
 			$purchaseForm.find( '.file-name' ).html( $data.find( '.file-name' ).html() );
 			$purchaseForm.find( '.file-price' ).html( $data.find( '.file-price' ).html() );
+		} );
+
+
+		// Single Purchase Form
+		$purchaseForm.validate( {
+			rules   : {
+				'pv-first-name'   : "required",
+				'pv-email-address': {
+					required: true,
+					email   : true
+				}
+			},
+			messages: {
+				'pv-first-name'   : {
+					required: proVip.l10n.required_field
+				},
+				'pv-email-address': {
+					required: proVip.l10n.required_field,
+					email   : proVip.l10n.valid_email
+				}
+			}
+		} );
+		$purchaseForm.on( 'click', 'label.error', function(){
+			$( this ).remove();
 		} );
 
 	})();

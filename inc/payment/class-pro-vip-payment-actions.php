@@ -25,7 +25,6 @@ class Pro_VIP_Payment_Actions {
 
 	protected function __construct() {
 		add_action( 'pro_vip_payment_complete-plan-purchase', array( $this, 'planPurchaseAfterPayment' ) );
-		add_action( 'pro_vip_payment_complete-single-file-purchase', array( $this, 'singleFilePurchaseAfterPayment' ) );
 	}
 
 	public function planPurchaseAfterPayment( Pro_VIP_Payment $payment ) {
@@ -73,57 +72,6 @@ class Pro_VIP_Payment_Actions {
 			Pro_VIP_Email::template(
 				apply_filters( 'pro_vip_purchase_account_email_receipt_content', pvGetOption( 'email_purchase_account_receipt', Pro_VIP_Email::getMail( 'account-purchase' ) ) ),
 				$tags
-			)
-		);
-
-
-	}
-
-	public function singleFilePurchaseAfterPayment( Pro_VIP_Payment $payment ) {
-
-		pvUpdateTotalSells( $payment->price );
-
-		if ( empty( $payment->custom[ 'last-name' ] ) ) {
-			$payment->custom[ 'last-name' ] = '';
-		}
-
-
-		$file = Pro_VIP_File::find( $payment->custom[ 'purchase-data' ][ 'file_id' ], $payment->custom[ 'purchase-data' ][ 'file_index' ] );
-
-		if ( ! $file->getFile() ) {
-			pvAddNotice( 'File Not Found!', 'provip' );
-
-			return false;
-		}
-
-		$purchase = $file::registerUserFilePurchase( array(), $payment->custom[ 'purchase-data' ][ 'user_id' ] );
-
-
-		if ( ! $purchase ) {
-			pvAddNotice( __( 'There was a problem while registering user purchase. Please contact to site administrator.', 'provip' ) );
-
-			return false;
-		}
-
-		$templateTags = array(
-			'first-name'      => $payment->custom[ 'first-name' ],
-			'last-name'       => $payment->custom[ 'last-name' ],
-			'name'            => $payment->custom[ 'first-name' ] . ( ! empty( $payment->custom[ 'last-name' ] ) ? ( ' ' . $payment->custom[ 'last-name' ] ) : '' ),
-			'file-name'       => $file::getFileDlName(),
-			'payment-amount'  => Pro_VIP_Currency::priceHTML( $payment->price ),
-			'payment-gateway' => $payment->getGateway()->frontendLabel,
-			'payment-date'    => date_i18n( get_option( 'date_format' ), strtotime( $payment->date ) ),
-			'download-link'   => $file::downloadUrl(),
-		);
-
-		do_action( 'pro_vip_file_purchase_complete', $payment, $templateTags );
-
-		Pro_VIP_Email::send(
-			$payment->custom[ 'user-email-address' ],
-			pvGetOption( 'email_purchase_file_subject', __( 'File Purchase', 'provip' ) ),
-			Pro_VIP_Email::template(
-				pvGetOption( 'email_file_purchase_receipt', Pro_VIP_Email::getMail( 'file-purchase' ) ),
-				$templateTags
 			)
 		);
 

@@ -199,3 +199,8 @@ function pvUpdateTotalSells( $increase ) {
 function pvLoginMsg() {
 	return do_shortcode( pvGetOption( 'login_msg', __( 'You have to login first.<br/>[pv-login-form]', 'provip' ) ) );
 }
+
+
+function pvDbVersion() {
+	return ! empty( pv()->dbVersion ) ? pv()->dbVersion : '10';
+}

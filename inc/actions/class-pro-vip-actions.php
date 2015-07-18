@@ -29,7 +29,6 @@ class Pro_VIP_Actions {
 		$this->actionFileDownload();
 		$this->purchasePlanBeforePayment();
 		$this->paymentReturn();
-		$this->fileSinglePurchase();
 		$this->paymentBefore();
 	}
 
@@ -45,6 +44,12 @@ class Pro_VIP_Actions {
 					wp_die( $e->getMessage() );
 					die;
 				}
+
+				$handler = new Pro_VIP_Downloader();
+				$handler->filePath( $file::fullPath() );
+				$handler->dlFileName = $file::getFileDlName();
+
+				do_action( 'provip_before_file_download', $file, $handler );
 
 				if ( ! is_user_logged_in() ) {
 
@@ -88,13 +93,8 @@ class Pro_VIP_Actions {
 				}
 
 
-				$handler = new Pro_VIP_Downloader();
-				$handler->filePath( $file::fullPath() );
-				$handler->dlFileName = $file::getFileDlName();
-
-
 				$file::increaseDownloadsCount();
-				do_action( 'pro_vip_file_download', $file, $handler );
+				do_action( 'pro_vip_file_downloaded', $file, $handler );
 
 				$handler->download();
 
@@ -180,92 +180,6 @@ class Pro_VIP_Actions {
 		if ( ! empty( $_GET[ 'action' ] ) && $_GET[ 'action' ] == 'wvPaymentReturn' && ! empty( $_GET[ 'gateway' ] ) && $gateway = wvGetGateway( $_GET[ 'gateway' ] ) ) {
 			$gateway->afterPayment();
 		}
-	}
-
-
-	public function fileSinglePurchase() {
-
-		if (
-			empty( $_REQUEST[ 'action' ] )
-			|| $_REQUEST[ 'action' ] != 'wpPurchaseFile'
-			|| empty( $_REQUEST[ 'fileId' ] )
-			|| ! is_numeric( $_REQUEST[ 'fileId' ] )
-			|| empty( $_REQUEST[ 'file-index' ] )
-			|| ! is_numeric( $_REQUEST[ 'file-index' ] )
-		) {
-			return false;
-		}
-
-
-		$errors = array();
-
-		if ( empty( $_POST[ 'pv-first-name' ] ) || ! is_string( $_POST[ 'pv-first-name' ] ) ) {
-			$errors[ ] = 6;
-		}
-
-		if ( empty( $_POST[ 'pv-email-address' ] ) || ! is_string( $_POST[ 'pv-email-address' ] ) ) {
-			$errors[ ] = 4;
-		}
-
-		$errors = apply_filters( 'pro_vip_single_file_purchase_errors', $errors, $_REQUEST[ 'fileId' ], $_REQUEST[ 'file-index' ] );
-
-		if ( ! empty( $errors ) ) {
-
-			wp_redirect(
-				add_query_arg( array( 'wv-notice' => implode( ',', $errors ) ), get_permalink( $_REQUEST[ 'fileId' ] ) )
-			);
-			die;
-		}
-
-		try {
-			$file = Pro_VIP_File::find( $_REQUEST[ 'fileId' ], $_REQUEST[ 'file-index' ] );
-		} catch ( Exception $e ) {
-			wp_die( $e->getMessage() );
-			die;
-		}
-
-		if ( ! $file->singlePurchaseEnabled ) {
-			wp_die( __( 'Single sale not enabled.', 'provip' ) );
-			die;
-		}
-
-		do_action( 'pro_vip_single_file_purchase_before_payment', $_REQUEST[ 'fileId' ], $_REQUEST[ 'file-index' ] );
-
-
-		$payment        = new Pro_VIP_Payment();
-		$payment->price = $file::getFilePrice();
-		$payment->type  = 'single-file-purchase';
-		if ( ! empty( $_POST[ 'pv-gateway' ] ) ) {
-			$payment->gateway = $_POST[ 'pv-gateway' ];
-		}
-
-		$payment->custom[ 'purchase-data' ]      = array(
-			'file_id'    => $file->ID,
-			'file_index' => $file::fileIndex(),
-			'user_id'    => get_current_user_id()
-		);
-		$payment->custom[ 'user-email-address' ] = $_POST[ 'pv-email-address' ];
-		$payment->custom[ 'first-name' ]         = $_POST[ 'pv-first-name' ];
-		if ( ! empty( $_POST[ 'pv-last-name' ] ) && is_string( $_POST[ 'pv-last-name' ] ) ) {
-			$payment->custom[ 'last-name' ] = $_POST[ 'pv-last-name' ];
-		}
-
-		do_action( 'pro_vip_single_file_purchase', $_REQUEST[ 'fileId' ], $_REQUEST[ 'file-index' ], $payment );
-
-		if ( 0 >= $payment->price ) {
-			$payment->status = 'publish';
-			$payment->save();
-			$payment->getGateway()->paymentComplete( $payment );
-
-			return true;
-		}
-
-
-		$payment->proceed();
-
-
-		die;
-
 	}
 
 

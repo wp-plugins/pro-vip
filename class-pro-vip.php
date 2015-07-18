@@ -25,7 +25,9 @@ final class Pro_VIP {
 	 */
 	public $api;
 
-	public $version = '0.1.1';
+	public
+		$version = '0.1.3',
+		$dbVersion = '20';
 
 	public static function getInstance() {
 		static $instance;
@@ -70,12 +72,12 @@ final class Pro_VIP {
 		Pro_VIP_Template::instance();
 		Pro_VIP_SMS::getInstance();
 		PV_Custom_Payment::instance();
+		PV_Single_File_Purchase::instance();
 
-		if( pvGetOption('enable_api', 'no') == 'yes' ){
+		if ( pvGetOption( 'enable_api', 'no' ) == 'yes' ) {
 			$this->api = PV_API::instance();
 		}
 
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueueAssets' ) );
 
 		add_action( 'init', array( $this, 'flushRewriteRules' ), 9999 );
 
@@ -105,29 +107,6 @@ final class Pro_VIP {
 		return apply_filters( 'pro_vip_config', isset( self::$config[ $key ] ) ? self::$config[ $key ] : $default, $key );
 	}
 
-	public function enqueueAssets() {
-
-//		if ( ! isPV() ) {
-//			return false;
-//		}
-
-		wp_enqueue_style( 'wv-styles', PRO_VIP_URL . 'templates/assets/css/styles.css' );
-		wp_enqueue_script(
-			'wv-jquery-modal',
-			PRO_VIP_URL . 'templates/assets/js/plugins/jquery.modal.min.js',
-			array(
-				'jquery'
-			)
-		);
-
-		wp_enqueue_script( 'wv-scripts', PRO_VIP_URL . 'templates/assets/js/general.js', array(
-			'jquery'
-		) );
-		wp_localize_script( 'wv-scripts', 'proVip', array(
-			'ajaxurl' => admin_url( 'admin-ajax.php' )
-		) );
-
-	}
 
 	/**
 	 * @param       $filename

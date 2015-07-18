@@ -33,6 +33,7 @@ class Pro_VIP_Template {
 		}
 		add_action( 'template_redirect', array( $this, 'loadTemplates' ) );
 		add_action( 'wp_footer', array( $this, 'footerHTML' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueueAssets' ) );
 	}
 
 	public static function getPath( $templateName, $slug = '' ) {
@@ -130,5 +131,41 @@ class Pro_VIP_Template {
 			$this::load( 'general-footer' );
 		}
 	}
+
+	public function enqueueAssets() {
+		wp_enqueue_style( 'pv-styles', PRO_VIP_URL . 'templates/assets/css/styles.css' );
+		wp_enqueue_script(
+			'pv-jquery.validate',
+			PRO_VIP_URL . 'templates/assets/js/plugins/jquery.validate.min.js',
+			array(
+				'jquery'
+			)
+		);
+		wp_enqueue_script(
+			'pv-jquery-modal',
+			PRO_VIP_URL . 'templates/assets/js/plugins/jquery.modal.min.js',
+			array(
+				'jquery'
+			)
+		);
+		wp_enqueue_script(
+			'pv-jquery-modal',
+			PRO_VIP_URL . 'templates/assets/js/plugins/jquery.modal.min.js',
+			array(
+				'jquery'
+			)
+		);
+
+		wp_enqueue_script( 'pv-scripts', PRO_VIP_URL . 'templates/assets/js/general.js', array( 'jquery' ) );
+		wp_localize_script( 'pv-scripts', 'proVip', array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'l10n' => array(
+				'required_field' => __( 'This field is required.', 'provip' ),
+				'valid_email' => __( 'Please enter a valid email address.', 'provip' )
+			)
+		) );
+
+	}
+
 
 }
