@@ -37,6 +37,10 @@ Sell files through wordpress
 * Localisation - Updated fa_IR languages files
 * Bug Fixes
 
-= 0.1.3 - 20/07/2015 =
+= 0.1.3 - 18/07/2015 =
 * Added - Now guest users can purchase files without registering
 * Bug Fixes
+
+= 0.1.4 - 18/07/2015 =
+* Fixed - Some RTL CSS styles
+* Localisation - Updated fa_IR languages files

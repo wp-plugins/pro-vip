@@ -159,13 +159,13 @@ class PV_Single_File_Purchase {
 				sprintf( '%d,%d', $file->ID, $file->fileIndex() ),
 				DAY_IN_SECONDS * absint( pvGetOption( 'single_file_guest_purchase_download_time', 48 ) )
 			);
-			$dlLink = add_query_arg(
+			$dlLink                 = add_query_arg(
 				array(
 					'token' => $uid
 				),
 				$dlLink
 			);
-			$this->_tmp['dlLink'] = $dlLink;
+			$this->_tmp[ 'dlLink' ] = $dlLink;
 			add_action( 'pro_vip_payment_receipt_after', array( $this, 'addDownloadLinkToPaymentReceipt' ) );
 		}
 
@@ -218,12 +218,13 @@ class PV_Single_File_Purchase {
 	}
 
 
-	public function addDownloadLinkToPaymentReceipt(){
-?>
+	public function addDownloadLinkToPaymentReceipt() {
+		?>
 		<tr>
-			<td colspan="2"><h3 style="text-align: center;margin: 0;"><a href="<?= $this->_tmp['dlLink'] ?>"><?= __( 'Download File', 'provip' ) ?></a></h3></td>
+			<td colspan="2"><h3 style="text-align: center;margin: 0;">
+					<a href="<?= $this->_tmp[ 'dlLink' ] ?>"><?= __( 'Download File', 'provip' ) ?></a></h3></td>
 		</tr>
-<?php
+	<?php
 	}
 
 }

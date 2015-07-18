@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Pro-VIP v0.1.2\n"
+"Project-Id-Version: Pro-VIP v0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-07-17 20:58:25+0000\n"
+"PO-Revision-Date: 2015-07-18 11:41:29+0000\n"
 "Last-Translator: vahid <vahidd.com@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: inc/actions/class-pro-vip-actions.php:67
-#: inc/actions/class-pro-vip-actions.php:78
+#: inc/actions/class-pro-vip-actions.php:72
+#: inc/actions/class-pro-vip-actions.php:83
 #@ provip
 msgid "Login Failed."
 msgstr "خطا در ورود."
 
-#: inc/actions/class-pro-vip-actions.php:86
+#: inc/actions/class-pro-vip-actions.php:91
 #, php-format
 #@ provip
 msgid "Oops. You cannot download this file. <a href=\"%s\">Return to site</a>"
@@ -38,19 +38,19 @@ msgid "Invalid Plan or plan level."
 msgstr "خطا در پلن یا نوع پلن."
 
 #: inc/actions/class-pro-vip-actions.php:121
-#: inc/actions/class-pro-vip-actions.php:288
+#: inc/actions/class-pro-vip-actions.php:202
 #: inc/classes/class-pro-vip-notices.php:94
 #@ provip
 msgid "Invalid email address."
 msgstr "Invalid email address."
 
 #: inc/actions/class-pro-vip-actions.php:125
-#: inc/actions/class-pro-vip-actions.php:292
+#: inc/actions/class-pro-vip-actions.php:206
 #@ provip
 msgid "Empty first name."
 msgstr "فیلد نام خالی است."
 
-#: inc/actions/class-pro-vip-actions.php:228
+#: inc/classes/class-pv-single-file-purchase.php:77
 #@ provip
 msgid "Single sale not enabled."
 msgstr "فروش تکی فعال نیست."
@@ -105,7 +105,7 @@ msgstr "سطح‌ها"
 
 #: inc/admin/files/class-pro-vip-admin-files-metabox.php:67
 #: inc/admin/payments/class-pro-vip-admin-payments.php:104
-#: templates/content-single-download.php:54
+#: templates/content-single-download.php:53
 #@ provip
 msgid "Price"
 msgstr "قیمت"
@@ -254,7 +254,7 @@ msgstr "وضعیت"
 #: inc/admin/payments/class-pro-vip-admin-payments.php:108
 #: inc/views/admin/payments/view-payment.php:53
 #: inc/views/admin/settings/gateways.php:17
-#: templates/content-single-download.php:64
+#: templates/content-single-download.php:63
 #: templates/plans.php:46
 #: templates/shortcodes/payment-form.php:27
 #: templates/shortcodes/receipt.php:57
@@ -276,12 +276,12 @@ msgstr "شما به این صفحه اجازه دسترسی ندارید."
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:238
+#: inc/admin/settings/class-pro-vip-admin-settings.php:239
 #@ provip
 msgid "General"
 msgstr "عمومی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:243
+#: inc/admin/settings/class-pro-vip-admin-settings.php:244
 #@ provip
 msgid "Default VIP Roles"
 msgstr "نقش‌های پیشفرض وی‌آی‌پی"
@@ -304,184 +304,184 @@ msgstr "بله"
 msgid "No"
 msgstr "خیر"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:245
+#: inc/admin/settings/class-pro-vip-admin-settings.php:246
 #@ provip
 msgid "Currency Settings"
 msgstr "تنظیمات ارز"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:253
+#: inc/admin/settings/class-pro-vip-admin-settings.php:254
 #@ provip
 msgid "Default Currency"
 msgstr "ارز پیشفرض"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:256
+#: inc/admin/settings/class-pro-vip-admin-settings.php:257
 #@ provip
 msgid "Left (£99.99)"
 msgstr "جپ (£99.99)"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:257
+#: inc/admin/settings/class-pro-vip-admin-settings.php:258
 #@ provip
 msgid "Right (99.99£)"
 msgstr "راست (99.99£)"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:258
+#: inc/admin/settings/class-pro-vip-admin-settings.php:259
 #@ provip
 msgid "Left with space (£ 99.99)"
 msgstr "چپ با فاصله (£ 99.99)"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:259
+#: inc/admin/settings/class-pro-vip-admin-settings.php:260
 #@ provip
 msgid "Right with space (99.99 £)"
 msgstr "راست با فاصله (99.99 £)"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:260
+#: inc/admin/settings/class-pro-vip-admin-settings.php:261
 #@ provip
 msgid "Currency Position"
 msgstr "موقعیت ارز"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:262
+#: inc/admin/settings/class-pro-vip-admin-settings.php:263
 #@ provip
 msgid "Thousand Separator"
 msgstr "جداکننده هزارگان"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:263
+#: inc/admin/settings/class-pro-vip-admin-settings.php:264
 #@ provip
 msgid "Decimal Separator"
 msgstr "جداکننده اعشار"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:264
+#: inc/admin/settings/class-pro-vip-admin-settings.php:265
 #@ provip
 msgid "Number of Decimals"
 msgstr "تعداد اعشار"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:271
+#: inc/admin/settings/class-pro-vip-admin-settings.php:272
 #@ provip
 msgid "VIP Settings"
 msgstr "تنظیمات وی‌آی‌پی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:277
+#: inc/admin/settings/class-pro-vip-admin-settings.php:278
 #@ provip
 msgid "If you don't want to use vip levels just create one and select it as default vip level."
 msgstr "اگر نمی‌خواهید از سطح‌های افزونه استفاده کنید٬ فقط یک سطح ایجاد کنید و آن را به عنوان سطح پیشفرض انتخاب کنید."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:278
+#: inc/admin/settings/class-pro-vip-admin-settings.php:279
 #@ provip
 msgid "Default VIP Level"
 msgstr "سطح پیشفرض وی‌آی‌پی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:286
+#: inc/admin/settings/class-pro-vip-admin-settings.php:287
 #@ provip
 msgid "Pages"
 msgstr "صفحات"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:291
+#: inc/admin/settings/class-pro-vip-admin-settings.php:292
 #@ provip
 msgid "Put this shortcode in the page content. [pv-plans-form]"
 msgstr "کد میانبر [pv-plans-form] را به عنوان متن صفحه وارد کنید."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:292
+#: inc/admin/settings/class-pro-vip-admin-settings.php:293
 #@ provip
 msgid "Purchase Plan"
 msgstr "خرید پلن"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:296
+#: inc/admin/settings/class-pro-vip-admin-settings.php:297
 #@ provip
 msgid "This is the page buyers are sent to after completing their purchases. The [pv-receipt] short code should be on this page."
 msgstr "این صفحه‌ای است که کاربران بعد از پرداخت به آن هدایت می‌شوند. کد میانبر [pv-receipt] را به عنوان متن صفحه وارد کنید."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:297
+#: inc/admin/settings/class-pro-vip-admin-settings.php:298
 #@ provip
 msgid "Success Page"
 msgstr "صفحه پرداخت موفقیت‌آمیز"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:314
+#: inc/admin/settings/class-pro-vip-admin-settings.php:315
 #@ provip
 msgid "Emails"
 msgstr "ایمیل‌ها"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:318
+#: inc/admin/settings/class-pro-vip-admin-settings.php:319
 #@ provip
 msgid "Email Logo"
 msgstr "لوگو ایمیل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:320
+#: inc/admin/settings/class-pro-vip-admin-settings.php:321
 #@ provip
 msgid "Email Footer"
 msgstr "فوتر ایمیل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:322
+#: inc/admin/settings/class-pro-vip-admin-settings.php:323
 #@ provip
 msgid "From Name"
 msgstr "ایمل از نام"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:323
+#: inc/admin/settings/class-pro-vip-admin-settings.php:324
 #@ provip
 msgid "From Email"
 msgstr "از ایمیل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:325
+#: inc/admin/settings/class-pro-vip-admin-settings.php:326
 #@ provip
 msgid "<h3>Account Purchase</h3>"
 msgstr "<h3>خرید اکانت</h3>"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:330
+#: inc/admin/settings/class-pro-vip-admin-settings.php:331
 #@ provip
 msgid "Purchase Account Subject"
 msgstr "موضوع ایمیل خرید اکانت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:331
-#: inc/payment/class-pro-vip-payment-actions.php:72
+#: inc/admin/settings/class-pro-vip-admin-settings.php:332
+#: inc/payment/class-pro-vip-payment-actions.php:71
 #@ provip
 msgid "Account Purchase"
 msgstr "خرید اکانت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:335
+#: inc/admin/settings/class-pro-vip-admin-settings.php:336
 #@ provip
 msgid "Account Purchase Receipt"
 msgstr "رسید خرید اکانت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:356
+#: inc/admin/settings/class-pro-vip-admin-settings.php:357
 #@ provip
 msgid "<h3>File Purchase</h3>"
 msgstr "<h3>خرید فایل</h3>"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:361
+#: inc/admin/settings/class-pro-vip-admin-settings.php:362
 #@ provip
 msgid "Purchase File Subject"
 msgstr "موضوع ایمیل خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:362
-#: inc/payment/class-pro-vip-payment-actions.php:123
+#: inc/admin/settings/class-pro-vip-admin-settings.php:363
+#: inc/classes/class-pv-single-file-purchase.php:187
 #@ provip
 msgid "File Purchase"
 msgstr "خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:366
+#: inc/admin/settings/class-pro-vip-admin-settings.php:367
 #@ provip
 msgid "File Purchase Receipt"
 msgstr "رسید خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:413
+#: inc/admin/settings/class-pro-vip-admin-settings.php:414
 #@ provip
 msgid "Payment Gateway"
 msgstr "درگاه پرداخت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:428
+#: inc/admin/settings/class-pro-vip-admin-settings.php:429
 #@ provip
 msgid "Other"
 msgstr "دیگر"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:435
+#: inc/admin/settings/class-pro-vip-admin-settings.php:436
 #@ provip
 msgid "Delete Expired Users from Database"
 msgstr "حذف کاربران منقضی شده از دیتابیس"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:441
+#: inc/admin/settings/class-pro-vip-admin-settings.php:442
 #@ provip
 msgid "Encryption Key"
 msgstr "کلید کدگذاری"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:170
+#: inc/admin/settings/class-pro-vip-admin-settings.php:171
 #, php-format
 #@ provip
 msgctxt "Gateway Settings"
@@ -699,7 +699,7 @@ msgstr ""
 "سپاس از خرید شما. برای دانلود فایل خریداری شده روی لینک زیر کلیک کنید..\n"
 "<a href='{{download-link}}'>{{file-name}}</a>"
 
-#: inc/payment/class-pro-vip-payment-actions.php:103
+#: inc/classes/class-pv-single-file-purchase.php:148
 #@ provip
 msgid "There was a problem while registering user purchase. Please contact to site administrator."
 msgstr "خطایی هنگام ثبت خرید شما رخ داد. لطفا با مدیر سایت تماس بگیرید."
@@ -849,6 +849,7 @@ msgid_plural "Downloaded %s times"
 msgstr[0] "%s دفعه دانلود شده"
 msgstr[1] "%s دفعه دانلود شده"
 
+#: inc/classes/class-pv-single-file-purchase.php:225
 #: inc/views/admin/files/file-item.php:18
 #@ provip
 msgid "Download File"
@@ -1101,21 +1102,21 @@ msgstr "پلنی وجود ندارد"
 msgid "Edit Accounts"
 msgstr "ویرایش حساب‌های کاربری"
 
-#: templates/content-single-download.php:46
+#: templates/content-single-download.php:45
 #, php-format
 #@ provip
 msgid "Purchase %s"
 msgstr "خرید %s"
 
 #: inc/payment/class-pro-vip-payment.php:207
-#: templates/content-single-download.php:78
+#: templates/content-single-download.php:75
 #: templates/plans.php:71
 #: templates/shortcodes/payment-form.php:41
 #@ provip
 msgid "First Name"
 msgstr "نام"
 
-#: templates/content-single-download.php:90
+#: templates/content-single-download.php:87
 #: templates/plans.php:83
 #: templates/shortcodes/payment-form.php:53
 #@ provip
@@ -1123,31 +1124,31 @@ msgid "Last Name"
 msgstr "نام خانوادگی"
 
 #: inc/payment/class-pro-vip-payment.php:215
-#: templates/content-single-download.php:102
+#: templates/content-single-download.php:99
 #: templates/plans.php:58
 #: templates/shortcodes/payment-form.php:65
 #@ provip
 msgid "Email Address"
 msgstr "آدرس ایمیل"
 
-#: templates/content-single-download.php:25
-#: templates/content-single-download.php:118
+#: templates/content-single-download.php:24
+#: templates/content-single-download.php:115
 #: templates/plans.php:107
 #@ provip
 msgid "Purchase"
 msgstr "خرید"
 
-#: templates/content-single-download.php:126
+#: templates/content-single-download.php:123
 #@ provip
 msgid "You need to be logged in."
 msgstr "ابتدا باید وارد سایت شوید."
 
-#: templates/content-single-download.php:127
+#: templates/content-single-download.php:124
 #@ provip
 msgid "Login"
 msgstr "ورود"
 
-#: templates/content-single-download.php:128
+#: templates/content-single-download.php:125
 #@ provip
 msgid "Register"
 msgstr "ثبت‌نام"
@@ -1210,7 +1211,7 @@ msgstr "تاریخ"
 msgid "Payment Key"
 msgstr "کلید پرداخت"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:337
+#: inc/admin/settings/class-pro-vip-admin-settings.php:338
 #@ provip
 msgid ""
 "Available template tags: <br/>\n"
@@ -1241,7 +1242,7 @@ msgstr ""
 "<code>{{expire-human-time}}</code>: تاریخ پایان پلن خریداری شده به مقدار مانده<br/>\n"
 "<code>{{level-name}}</code>: نام سطح خریداری شده<br/>\n"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:368
+#: inc/admin/settings/class-pro-vip-admin-settings.php:369
 #@ provip
 msgid ""
 "Available template tags: <br/>\n"
@@ -1305,8 +1306,8 @@ msgstr "تنظیمات ذخیره شدند."
 msgid "Panel reset."
 msgstr "تنظیمات ریست شدند."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:446
-#: inc/admin/settings/class-pro-vip-admin-settings.php:451
+#: inc/admin/settings/class-pro-vip-admin-settings.php:447
+#: inc/admin/settings/class-pro-vip-admin-settings.php:452
 #@ provip
 msgid "Filter content metabox in post types"
 msgstr "متاباکس فیلتر نوشته در پست‌تایپ‌های"
@@ -1416,7 +1417,7 @@ msgstr "حذف"
 msgid "View"
 msgstr "مشاهده"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:307
+#: inc/admin/settings/class-pro-vip-admin-settings.php:308
 #@ provip
 msgid "User's Payments"
 msgstr "پرداخت‌های کاربر"
@@ -1426,17 +1427,17 @@ msgstr "پرداخت‌های کاربر"
 msgid "No payment"
 msgstr "پرداختی وجود ندارد."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:302
+#: inc/admin/settings/class-pro-vip-admin-settings.php:303
 #@ provip
 msgid "Failed Payment Page"
 msgstr "صفحه پرداخت ناموفق"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:306
+#: inc/admin/settings/class-pro-vip-admin-settings.php:307
 #@ provip
 msgid "The [pv-user-payments] short code should be on this page."
 msgstr "کد میانبر [pv-user-payments] باید در این صفحه باشد."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:450
+#: inc/admin/settings/class-pro-vip-admin-settings.php:451
 #: inc/functions.php:200
 #@ default
 #@ provip
@@ -1459,38 +1460,38 @@ msgstr "پرو-وی‌آی‌پی"
 msgid "Download Files"
 msgstr "دانلود فایل‌ها"
 
-#: templates/content-single-download.php:23
+#: templates/content-single-download.php:22
 #@ provip
 msgid "Download"
 msgstr "دانلود"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:195
+#: inc/admin/settings/class-pro-vip-admin-settings.php:196
 #@ provip
 msgid "SMS"
 msgstr "اس‌ام‌اس"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:201
+#: inc/admin/settings/class-pro-vip-admin-settings.php:202
 #, php-format
 #@ default
 msgid "<a href=\"%s\">WordPress SMS</a> Plugin is not installed."
 msgstr ""
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:459
+#: inc/admin/settings/class-pro-vip-admin-settings.php:460
 #@ provip
 msgid "API"
 msgstr "ای‌پی‌آی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:467
+#: inc/admin/settings/class-pro-vip-admin-settings.php:468
 #@ provip
 msgid "Enable API"
 msgstr "فعال کردن ای‌پی‌آی"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:472
+#: inc/admin/settings/class-pro-vip-admin-settings.php:473
 #@ provip
 msgid "User Authentication API"
 msgstr "ای‌پی‌آی اعتبار سنجی کاربر"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:478
+#: inc/admin/settings/class-pro-vip-admin-settings.php:479
 #@ provip
 msgid "API Key"
 msgstr "کلید ای‌پی‌آی"
@@ -1551,18 +1552,18 @@ msgstr "route ای برای این آدرس و متد تعریف نشده است
 msgid "Missing parameter %s"
 msgstr "پارامتر %s تعریف نشده است"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:209
+#: inc/admin/settings/class-pro-vip-admin-settings.php:210
 #@ provip
 msgid "SMS on file purchase"
 msgstr "اس‌ام‌اس هنگام خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:213
+#: inc/admin/settings/class-pro-vip-admin-settings.php:214
 #@ provip
 msgid "File purchase text"
 msgstr "متن خرید فایل"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:214
-#: inc/admin/settings/class-pro-vip-admin-settings.php:226
+#: inc/admin/settings/class-pro-vip-admin-settings.php:215
+#: inc/admin/settings/class-pro-vip-admin-settings.php:227
 #: inc/sms/class-pro-vip-sms-actions.php:43
 #: inc/sms/class-pro-vip-sms-actions.php:48
 #@ provip
@@ -1575,12 +1576,12 @@ msgstr ""
 "خرید شما موفقیت آمیز بود.\n"
 "{{site-name}}"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:222
+#: inc/admin/settings/class-pro-vip-admin-settings.php:223
 #@ provip
 msgid "SMS on plan purchase"
 msgstr "اس‌ام‌اس هنگام خرید پلن"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:225
+#: inc/admin/settings/class-pro-vip-admin-settings.php:226
 #@ provip
 msgid "Plan purchase text"
 msgstr "متن خرید پلن"
@@ -1596,28 +1597,28 @@ msgstr "شماره موبایل"
 msgid "<a href=\"%s\">WP SMS</a> plugin is not installed. to use sms feature install this plugin."
 msgstr "افزونه <a href=\"%s\">WP SMS</a> نصب نشده است. برای استفاده از قابلیت اس‌ام‌اس ابتدا این افزونه را نصب کنید."
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:383
+#: inc/admin/settings/class-pro-vip-admin-settings.php:384
 #@ provip
 msgid "<h3>Custom Payment</h3>"
 msgstr "<h3>پرداخت دلخواه</h3>"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:388
+#: inc/admin/settings/class-pro-vip-admin-settings.php:389
 #@ provip
 msgid "Custom Payment Subject"
 msgstr "موضوع پرداخت دلخواه"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:389
+#: inc/admin/settings/class-pro-vip-admin-settings.php:390
 #: inc/classes/class-pv-custom-payment.php:82
 #@ provip
 msgid "Successful Payment"
 msgstr "پرداخت موفقیت‌آمیز"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:393
+#: inc/admin/settings/class-pro-vip-admin-settings.php:394
 #@ provip
 msgid "Custom Payment Receipt"
 msgstr "متن پرداخت دلخواه"
 
-#: inc/admin/settings/class-pro-vip-admin-settings.php:395
+#: inc/admin/settings/class-pro-vip-admin-settings.php:396
 #@ provip
 msgid ""
 "Available template tags: <br/>\n"
@@ -1666,4 +1667,34 @@ msgstr "نوع پرداخت"
 #@ provip
 msgid "Pay"
 msgstr "پرداخت"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:488
+#@ provip
+msgid "Guest Purchase"
+msgstr "خرید میهمان"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:495
+#@ provip
+msgid "Enable single file guest purchase"
+msgstr "فعال کردن خرید فایل برای میهمان"
+
+#: inc/admin/settings/class-pro-vip-admin-settings.php:499
+#@ provip
+msgid "Download Time (in hours)"
+msgstr "زمان دانلود (به ساعت)"
+
+#: inc/classes/class-pv-single-file-purchase.php:139
+#@ provip
+msgid "File Not Found!"
+msgstr "فایل یافت نشد!"
+
+#: inc/frontend/class-pro-vip-template.php:163
+#@ provip
+msgid "This field is required."
+msgstr "تکمیل این فیلد اجباری است."
+
+#: inc/frontend/class-pro-vip-template.php:164
+#@ provip
+msgid "Please enter a valid email address."
+msgstr "لطفا یک آدرس ایمیل صحیح وارد کنید."
 

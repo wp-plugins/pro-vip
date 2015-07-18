@@ -26,7 +26,7 @@ final class Pro_VIP {
 	public $api;
 
 	public
-		$version = '0.1.3',
+		$version = '0.1.4',
 		$dbVersion = '20';
 
 	public static function getInstance() {

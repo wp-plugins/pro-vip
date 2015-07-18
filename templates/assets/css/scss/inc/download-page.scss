@@ -109,12 +109,36 @@
       text-align: center;
       margin: 10px 0 0 0;
     }
-    //    > p {
-    //      padding: 13px 14px;
-    //      background-color: #F7F7F7;
-    //      border-bottom: 1px solid #D2D2D2;
-    //      margin: 0 -20px;
-    //    }
   }
 
+}
+
+body.rtl {
+  .wv-single-download {
+    div.box {
+      float: right;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+    #pv-purchase-file {
+      table {
+        tr {
+          td {
+            &.input {
+              label.error {
+                left: auto;
+                right: 100%;
+                &:before {
+                  border-right: 0;
+                  border-left: 5px solid #DD311F;
+                  right: -5px;
+                  left: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

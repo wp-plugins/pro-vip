@@ -205,6 +205,19 @@
     text-align: center;
     margin: 10px 0 0 0; }
 
+body.rtl .wv-single-download div.box {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0; }
+body.rtl .wv-single-download #pv-purchase-file table tr td.input label.error {
+  left: auto;
+  right: 100%; }
+  body.rtl .wv-single-download #pv-purchase-file table tr td.input label.error:before {
+    border-right: 0;
+    border-left: 5px solid #DD311F;
+    right: -5px;
+    left: auto; }
+
 .pv-plans-form {
   position: relative; }
   .pv-plans-form table {
